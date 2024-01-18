@@ -1,0 +1,69 @@
+body{
+  background-color: rgba(191, 191, 191, 0.40); //rga sert à selectionner la couleur et gérer l'opacité de la couleur le 'a' signifie alpha
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto; //margin auto défini automatiquement des margin bottom / top / right / left 
+  margin-top: 15px; //pour ecraser le margin auto il suffit de le mettre dans le bonne ordre donc d'abord l'auto et ensuite le margin qu'on redéfini
+}
+
+.contain-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+  //border: 0.5px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  background-color: white;
+  img{
+    border: 1px solid;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(	30.165, -1.925, -14.942, 0.2);
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.h3-title {
+  text-align: center;
+}
+
+.content-card {
+  p {
+    text-align: center;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  a {
+    text-align: center;
+    width: 5em;
+    border: 2px solid;
+    margin-bottom: 5%;
+    border-radius: 8px;
+  }
+
+  a:hover{
+    transition: 0.8s;
+    background-color: #34495e;
+    border: #34495e solid;
+    filter: opacity(70%);
+    color: white;
+  }
+}

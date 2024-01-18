@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
 
-    Route::view('/', 'admin.index');
+    Route::view('/', 'admin.index'); //premier paramètre => URL | deuxième => chemin vers la vue
+    Route::view('realisation', 'admin.realisation.index');
 
 });
