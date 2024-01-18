@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('souscompetences', function (Blueprint $table) {
             $table->id();
-            $table->string('nom', 50);
+            $table->string('nom', 300);
 
-            $table->unsignedBigInteger('idCompetence')->nullable();
+            $table->unsignedBigInteger('idCompetence');
 
             $table->foreign('idCompetence')->references('id')->on('competences');
         });

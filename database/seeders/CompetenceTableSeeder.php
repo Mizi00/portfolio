@@ -13,6 +13,15 @@ class CompetenceTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Competence::factory()->count(5)->create();
+        $competences = [
+            ['nom' => "Gérer le patrimoine informatique"],
+            ['nom' => "Répondre aux incidents et aux demandes d’assistance et d’évolution"],
+            ['nom' => "Développer la présence en ligne de l’organisation"],
+            ['nom' => "Travailler en mode projet"],
+            ['nom' => "Mettre à disposition des utilisateurs un service informatique"],
+            ['nom' => "Organiser son développement professionnel"]
+        ];
+
+        Competence::insert($competences);
     }
 }
