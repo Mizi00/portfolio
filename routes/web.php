@@ -17,5 +17,6 @@ Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n
 
     Route::view('/', 'admin.index'); //premier paramètre => URL | deuxième => chemin vers la vue
     Route::view('realisation', 'admin.realisation.index');
+    Route::view('login', 'admin.login');
 
 });
