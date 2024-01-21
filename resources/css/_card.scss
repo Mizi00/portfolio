@@ -55,15 +55,16 @@ body{
     text-align: center;
     width: 5em;
     border: 2px solid;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
     border-radius: 8px;
   }
 
   a:hover{
     transition: 0.8s;
     background-color: #34495e;
-    border: #34495e solid;
+    border-color: #34495e;
     filter: opacity(70%);
     color: white;
+    margin-bottom: 10px;
   }
 }

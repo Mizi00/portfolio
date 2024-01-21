@@ -23,4 +23,5 @@
     @endfor
   </div>
 </div>
+<x-footer/>
 @endsection
