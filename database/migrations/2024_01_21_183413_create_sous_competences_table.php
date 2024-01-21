@@ -11,13 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('souscompetences', function (Blueprint $table) {
+        Schema::create('sous_competences', function (Blueprint $table) {
             $table->id();
-            $table->string('nom', 300);
-
-            $table->unsignedBigInteger('idCompetence');
-
-            $table->foreign('idCompetence')->references('id')->on('competences');
+            $table->timestamps();
         });
     }
 
@@ -26,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('souscompetences');
+        Schema::dropIfExists('sous_competences');
     }
 };

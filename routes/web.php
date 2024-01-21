@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
 
-    Route::view('/', 'admin.index'); //premier paramètre => URL | deuxième => chemin vers la vue
+    Route::view('/', 'admin.index')->name('home'); //premier paramètre => URL | deuxième => chemin vers la vue
     Route::view('realisation', 'admin.realisation.index');
-    Route::view('login', 'admin.login');
-
+    
+    Route::get('login', [AuthController::class, 'index'])->name('login'); // la method GET sert à envoyer ressource du site (ex: page HTML vers le client)
+    Route::post('login', [AuthController::class, 'login']);
 });
