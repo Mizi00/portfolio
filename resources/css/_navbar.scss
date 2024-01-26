@@ -8,6 +8,12 @@ a {
     text-decoration: none;
 }
 
+.dc-button {
+    svg {
+        font-size: 25px;    
+    }
+}
+
 .logo {
     margin: 0;
     font-size: 1.45em;
@@ -68,7 +74,7 @@ $header-height: 75px;
         height: $header-height;
     }
 
-    @media screen and (max-width: 1024px) {   
+    @media screen and (max-width: 1024px) {
         .main-nav {
             display: none !important;
         }

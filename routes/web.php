@@ -14,11 +14,17 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
-
-    Route::view('/', 'admin.index')->name('home'); //premier paramètre => URL | deuxième => chemin vers la vue
-    Route::view('realisation', 'admin.realisation.index');
+Route::view('/', 'index')->name('home');
+Route::view('realisation', 'admin.realisation.index')->name('realisation');
     
+Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
+     //premier paramètre => URL | deuxième => chemin vers la vue
     Route::get('login', [AuthController::class, 'index'])->name('login'); // la method GET sert à envoyer ressource du site (ex: page HTML vers le client)
     Route::post('login', [AuthController::class, 'login']);
 });
+
+Route::middleware('auth')->group(function() {
+    Route::view('admin', 'admin.index')->name('homeAdmin');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+});
+

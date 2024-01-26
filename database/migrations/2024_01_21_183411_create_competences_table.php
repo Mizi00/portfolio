@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('competences', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            //$table->timestamps();
+            $table->string('nom', 100);
         });
     }
 

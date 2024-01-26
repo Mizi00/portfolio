@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\Competence;
-use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 
 class CompetenceTableSeeder extends Seeder
 {
@@ -13,15 +13,29 @@ class CompetenceTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $competences = [
-            ['nom' => "Gérer le patrimoine informatique"],
-            ['nom' => "Répondre aux incidents et aux demandes d’assistance et d’évolution"],
-            ['nom' => "Développer la présence en ligne de l’organisation"],
-            ['nom' => "Travailler en mode projet"],
-            ['nom' => "Mettre à disposition des utilisateurs un service informatique"],
-            ['nom' => "Organiser son développement professionnel"]
-        ];
+        Competence::create([
+            'nom' => 'Gérer le patrimoine informatique'
+        ]);
 
-        Competence::insert($competences);
+        Competence::create([
+            'nom' => 'Répondre aux incidents et aux demandes d’ assistance et d’ évolution'
+        ]);
+
+        Competence::create([
+            'nom' => 'Développer la présence en ligne de l’organisation'
+        ]);
+
+        Competence::create([
+            'nom' => 'Travailler en mode projet'
+        ]);
+
+        Competence::create([
+            'nom' => 'Mettre à disposition des utilisateurs un service informatique'
+        ]);
+
+        Competence::create([
+            'nom' => 'Organiser son développement professionnel'
+        ]);
+
     }
 }

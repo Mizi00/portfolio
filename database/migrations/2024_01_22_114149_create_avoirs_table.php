@@ -11,17 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sous_competences', function (Blueprint $table) {
+        Schema::create('avoirs', function (Blueprint $table) {
             $table->id();
             //$table->timestamps();
-            $table->string('nom', 255);
 
-            //clé etrangère
+            //clé étrangère
             $table->unsignedBigInteger('idCompetence');
+            $table->unsignedBigInteger('idRealisation');
 
-        
             //relation avec les tables
             $table->foreign('idCompetence')->references('id')->on('competences');
+            $table->foreign('idRealisation')->references('id')->on('realisations');
         });
     }
 
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sous_competences');
+        Schema::dropIfExists('avoirs');
     }
 };
