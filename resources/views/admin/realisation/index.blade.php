@@ -1,27 +1,27 @@
 @extends('layouts.app')
 
 @section('body')
-<x-navbar />
-<x-sidebar/>
-<div class="container">
-  <div class="contain-card">
+<x-admin.navbar />
 
-  @for($i=0;$i<=11;$i++)
-    <article class="card">
-      <header>
-        <h3 class="h3-title">TEST</h3>
-      </header>
-      <img src="laravel.jpg" alt="">
-      <div class="content-card">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Ipsum ipsa odit accusamus distinctio dolorem nesciunt facilis perferendis fuga at, sequi,</p>
-      </div>
-      <div class="button">
-        <a href="#">Voir</a>
-      </div>
-    </article>
-    @endfor
-  </div>
+
+<div class="table-div">
+    <table class="table-realisation">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </thead>
+        <tbody>
+            @for($i=1; $i<=6; $i++)
+                <tr>
+                    <th>{{ $i }}</th>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>$320,800</td>
+                </tr>
+            @endfor
+            
+        </tbody>
+    </table>
 </div>
-<x-footer/>
-@endsection

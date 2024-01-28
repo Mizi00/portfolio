@@ -6,10 +6,10 @@
 <div class="container">
   <div class="contain-card">
 
-  @for($i=0;$i<=34;$i++)
+  @for($i=0;$i<=11;$i++)
     <article class="card">
       <header>
-        <h3 class="h3-title">HOME</h3>
+        <h3 class="h3-title">TEST</h3>
       </header>
       <img src="laravel.jpg" alt="">
       <div class="content-card">

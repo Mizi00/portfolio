@@ -1,0 +1,127 @@
+.navbar {
+    background-color: #ffff;
+    //box-shadow: 0 0 30px rgba(28, 39, 60, 0.08);
+    border-bottom: 1px solid rgba(28, 39, 60, 0.12);
+
+    &-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        margin-left: 1em;
+
+        a {
+            display: flex;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    &-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                color: red;
+
+            }
+        }
+
+        a:hover {
+            transition: all 0.2s ease-in-out;
+            color: #718daa;
+        }
+    }
+
+    @media screen and (min-width: 2px) {
+        position: relative;
+        //z-index: 100;
+        height: 64px;
+    }
+}
+
+.header-menu {
+    position: fixed;
+    width: 240px;
+    background-color: #ffff;
+    overflow-y: auto;
+    z-index: 1000;
+    transform: translateX(240px);
+    transition: all 0.35s;
+
+    @media screen and (min-width: 2px) {
+        //  border-right: 0;
+        position: static;
+        width: auto;
+        overflow-y: visible;
+        transform: none;
+        //z-index: auto;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    gap: 30px;
+
+    @media screen and (min-width: 992px) {
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    li {
+        margin-top: 0;
+
+        a {
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: #34495e;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 0;
+            transition: all 0.2s ease-in-out;
+            gap: 10px;
+
+            &:hover {
+                color: #718daa;
+            }
+        }
+        .menu-link-active {
+            color: #718daa;
+            &::before {
+                top: auto;
+                bottom: -22px;
+                left: 0;
+                right: 0;
+                width: auto;
+                height: 2px;
+                content: '';
+                position: absolute;
+                background-color: #718daa;
+                border-radius: 3px;
+            }
+        }
+            
+
+
+    }
+}

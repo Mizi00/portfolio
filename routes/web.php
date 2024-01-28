@@ -1,7 +1,9 @@
 <?php
 
+use App\Models\Realisation;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RealisationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +17,7 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::view('/', 'index')->name('home');
-Route::view('realisation', 'admin.realisation.index')->name('realisation');
+Route::view('realisation', 'realisation')->name('realisation');
     
 Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
      //premier paramètre => URL | deuxième => chemin vers la vue
@@ -26,5 +28,6 @@ Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n
 Route::middleware('auth')->group(function() {
     Route::view('admin', 'admin.index')->name('homeAdmin');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('rea', [RealisationController::class, 'show'])->name('realisationAdmin');
 });
 
