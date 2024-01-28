@@ -11,6 +11,8 @@
             <th>Name</th>
             <th>Position</th>
             <th>Salary</th>
+            <th>Aziz</th>
+            <th>ZEZE</th>
         </thead>
         <tbody>
             @for($i=1; $i<=6; $i++)
@@ -19,6 +21,8 @@
                     <td>Tiger Nixon</td>
                     <td>System Architect</td>
                     <td>$320,800</td>
+                    <td>Voir</td>
+                    <td>Voir</td>
                 </tr>
             @endfor
             

@@ -1,0 +1,33 @@
+.table-div {
+    display: block;
+    overflow-x: auto;
+    margin-top: 4rem;
+}
+
+.table-realisation {
+    margin-bottom: 0;
+    color: #3b4863;
+    width: 100%;
+    border-collapse: collapse;
+
+    thead th {
+        color: #7987a1;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: .2px;
+        text-transform: uppercase;
+        border-bottom-width: 0;
+        border-top-width: 0;
+        padding: 0 15px 5px;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        line-height: 1.462;
+        vertical-align: top;
+        border-top: 1px solid #cdd4e0 ;
+        text-align: left;
+    }
+
+}
