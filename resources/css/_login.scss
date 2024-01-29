@@ -1,3 +1,7 @@
+//CONST
+
+$hoverTransition : all 0.5s ease-in-out;
+
 body {
   background-color: rgba(191, 191, 191, 0.40);
 }
@@ -27,8 +31,14 @@ $colorgrey : rgba(191, 191, 191, 0.40);
     padding: 12px;
     margin-bottom: 16px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
+
+    &:focus {
+      transition: $hoverTransition;
+      outline: 0;
+      border: 2px solid #0d42778f;
+    }
   }
 
   #button {

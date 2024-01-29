@@ -23,7 +23,7 @@ class AuthController extends Controller
         if (Auth::attempt($login)) { //tente de connecter le user
             $request->session()->regenerate();
 
-            return redirect()->intended('home'); //rediriger automatiquement à l'endroit à laquel le user voulais accéder (ex: user veut aller sur la page back office, besoin de se connecter. Il tombe sur le formulaire de connexion, il se connecte et revient automatiquement sur le back office)
+            return redirect()->intended(route('homeAdmin')); //rediriger automatiquement à l'endroit à laquel le user voulais accéder (ex: user veut aller sur la page back office, besoin de se connecter. Il tombe sur le formulaire de connexion, il se connecte et revient automatiquement sur le back office)
         }
 
         return back()->withErrors([ // méthode back() = faire une redirection vers la précedente page ou on été si le les id sont eronés
