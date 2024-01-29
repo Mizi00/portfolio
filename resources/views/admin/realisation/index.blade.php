@@ -14,15 +14,15 @@
             <th>Aziz</th>
             <th>ZEZE</th>
         </thead>
-        <tbody>
+        <tbody class="table-body">
             @for($i=1; $i<=6; $i++)
                 <tr>
                     <th>{{ $i }}</th>
                     <td>Tiger Nixon</td>
                     <td>System Architect</td>
                     <td>$320,800</td>
-                    <td>Voir</td>
-                    <td>Voir</td>
+                    <td>efefefef</td>
+                    <td><a href="#">Voir</a></td>
                 </tr>
             @endfor
             

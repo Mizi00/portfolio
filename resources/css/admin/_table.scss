@@ -1,3 +1,7 @@
+//CONST
+
+$hoverTransition : all 0.5s ease-in-out;
+
 .table-div {
     display: block;
     overflow-x: auto;
@@ -14,7 +18,7 @@
         color: #7987a1;
         font-weight: 700;
         font-size: 15px;
-        letter-spacing: .2px;
+        letter-spacing: 2.5px;
         text-transform: uppercase;
         border-bottom-width: 0;
         border-top-width: 0;
@@ -28,6 +32,22 @@
         vertical-align: top;
         border-top: 1px solid #cdd4e0 ;
         text-align: left;
+    }
+
+    .table-body {
+        a {
+            font-weight: 700;
+
+            &:hover {
+                color: #006ed4;
+                transition: $hoverTransition;
+                text-decoration: underline;
+            }
+        }
+
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.075); 
+        }
     }
 
 }
