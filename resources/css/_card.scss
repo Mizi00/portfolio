@@ -1,7 +1,8 @@
-body{
+body {
   background-color: rgba(191, 191, 191, 0.40); //rga sert à selectionner la couleur et gérer l'opacité de la couleur le 'a' signifie alpha
 }
-.container{
+
+.container {
   max-width: 1200px;
   margin: 0 auto; //margin auto défini automatiquement des margin bottom / top / right / left 
   margin-top: 15px; //pour ecraser le margin auto il suffit de le mettre dans le bonne ordre donc d'abord l'auto et ensuite le margin qu'on redéfini
@@ -21,13 +22,14 @@ body{
   transition: 0.3s;
   border-radius: 15px;
   background-color: white;
-  img{
+
+  img {
     border: 1px solid;
   }
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(	30.165, -1.925, -14.942, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(30.165, -1.925, -14.942, 0.2);
 }
 
 .card img {
@@ -51,20 +53,25 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+
   a {
     text-align: center;
-    width: 5em;
-    border: 2px solid;
+    width: 100%;
+    border: 1px solid black;
     margin-bottom: 10px;
     border-radius: 8px;
+    font-size: 18px;
+    font-weight: 450;
+    padding: 0.2rem;
+    color: black;
   }
 
-  a:hover{
+  a:hover {
     transition: 0.8s;
-    background-color: #34495e;
-    border-color: #34495e;
-    filter: opacity(70%);
-    color: white;
+    background-color: rgba(6, 6, 6, 0.22);
+    //filter: opacity(70%);
     margin-bottom: 10px;
   }
 }
