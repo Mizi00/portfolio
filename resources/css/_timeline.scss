@@ -1,4 +1,5 @@
 .parcours {
+    padding-top: 30px;
     &-timeline {
         position: relative;
         max-width: 1200px;
@@ -95,16 +96,16 @@
 /*Media Queries*/
 
 @media screen and (max-width: 600px) {
-    .parcours-timeline {
+    .parcours-timeline::after {
         left: 31px;
-
-        &-contain {
+    }
+        .parcours-timeline-contain {
             width: 100%;
             padding-left: 70px;
             padding-right: 25px;
 
             &::before {
-                left: 60px;
+                left: 60px !important;
                 border: medium solid white;
                 border-width: 10px 10px 10px 0;
                 border-color: transparent white transparent transparent;
@@ -112,11 +113,10 @@
         }
 
         .left::after, .right::after {
-            left: 15px;
+            left: 15px !important;
         }
 
         .right {
-            left: 0%;
+            left: 0% !important;
         }
-    }
 }

@@ -10,11 +10,11 @@
     <h1>Portfolio</h1>
     <p>Toufik BOUKICHOU en BTS SIO</p>
   </div>
-    <a href="">Voir plus</a>
+    <a href="#parcours-id">Voir plus</a>
 </section>
 
 <!--SECTION PARCOUR-->
-<section class="parcours">
+<section class="parcours" id="parcours-id">
   <div class="parcours-title">
     <h1>Mon Parcours</h1>
   </div>
