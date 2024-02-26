@@ -4,14 +4,31 @@ footer{
     //padding: 10px;
     width: 100%;
     margin-top: 15px;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
 
-    &.footer-position{   // equivaut à dire en CSS 
+    &.footer-position{    
         position: fixed;
     }
-    .contain{
-        height: auto;
-        p{
-            margin: 0 auto;
+    .contain-center{
+        
+    }
+
+    .contain-left {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+
+        &-element {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+
+            svg {
+                font-size: 55px;
+            }
         }
     }
     

@@ -69,6 +69,8 @@ $header-height: 75px;
     //border-radius: 5px;
     transition: height 0.4s cubic-bezier(.68, -0.55, .27, 1.55);
 
+    z-index: 10;
+
     &.scrolled {
         height: $header-height - 10px;
         box-shadow: 0 0.125rem 2rem 2px rgba(0, 0, 0, 0.100);
