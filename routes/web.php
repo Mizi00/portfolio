@@ -18,6 +18,8 @@ use App\Http\Controllers\RealisationController;
 
 Route::view('/', 'index')->name('home');
 Route::view('realisation', 'realisation')->name('realisation');
+
+Route::view('veille', 'veille.index')->name('veille');
     
 Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
      //premier paramètre => URL | deuxième => chemin vers la vue

@@ -23,6 +23,10 @@
     <p>Je m'appelle Toufik Boukichou, j'ai 20 ans, <strong>étudiant</strong> en <strong>BTS Services Informatiques aux Organisations (SIO)</strong> résidant à <strong>Valenciennes</strong>. Mon parcours académique m'a ouvert les portes d'un univers qui me passionne profondément : l'informatique.
       Au fil de mon cursus, j'ai développé des compétences solides en développement, gestion de projets et maintenance des systèmes d'information. Mon intérêt pour la résolution de problèmes informatiques et la création de solutions novatrices a été le moteur de mon engagement dans ce domaine en constante évolution.
     </p>
+    <div class="about-me-text-button">
+      <a href="">Mon CV</a>
+    </div>
+    
   </div>
 </section>
 

@@ -1,0 +1,76 @@
+.veille {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+
+        h1 {
+            margin: 0;
+            margin-top: 15px;
+            text-transform: uppercase;
+            font-size: 30px;
+            letter-spacing: 2px;
+
+        }
+
+        p {
+            margin: 0;
+            color: gray;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 10px 0;
+
+        &-img {
+            img {
+                width: 310px;
+                border-radius: 12px;
+            }
+        }
+
+        &-element {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            span {
+                color: rgba(0, 0, 0, 0.6);
+                text-decoration: underline;
+            }
+            h2 {
+                margin: 0;
+                font-size: 25px;
+            }
+
+            &-button {
+                display: flex;
+                justify-content: end;
+                a {
+                    color: black;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    padding: 5px 15px;
+                    border-radius: 10px;
+                    transition: $transitionA;
+
+                    &:hover {
+                        //text-decoration: underline;
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+                }
+            }
+        }
+    }
+}

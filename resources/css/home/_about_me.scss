@@ -6,13 +6,15 @@
     gap: 5em;
     margin-top: 5em;
     padding-top: 5em;
+
     &-img {
         max-width: 600px;
 
-        img{
+        img {
             max-width: inherit;
         }
     }
+
     &-text {
         display: flex;
         flex-direction: column;
@@ -23,18 +25,39 @@
             font-size: 45px;
 
             &::after {
-                    content: "";
-                    height: 6px;
-                    width: 85px;
-                    margin:  10px 5px;
-                    display: block;
-                    background-color: black;
-                    border-radius: 10px;
+                content: "";
+                height: 6px;
+                width: 85px;
+                margin: 10px 5px;
+                display: block;
+                background-color: black;
+                border-radius: 10px;
             }
         }
 
         p {
             font-size: 20px;
         }
+
+        &-button {
+            display: flex;
+            //justify-content: end;
+            padding-right: 10px;
+            a {
+                color: black;
+                font-size: 23px;
+                font-weight: bolder;
+                background-color: #fff;
+                padding: 5px 15px;
+                border-radius: 5px;
+                transition: $transitionA;
+
+                &:hover {
+                    text-decoration: underline;
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
     }
 }
