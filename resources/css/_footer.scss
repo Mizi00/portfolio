@@ -1,12 +1,13 @@
 footer {
     margin-top: 5em;
-    border-top: 1.5px solid rgb(196, 194, 194);
+    //border-top: 1.5px solid rgb(196, 194, 194);
     bottom: 0;
     width: 100%;
     display: flex;
     padding: 20px 40px;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 
     &.footer-position {
         position: fixed;

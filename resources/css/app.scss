@@ -16,5 +16,6 @@ html, body{
 @import 'admin/navbar';
 @import 'admin/app';
 @import 'admin/table';
-@import 'hero';
-@import 'timeline';
+@import 'home/hero';
+@import 'home/timeline';
+@import 'home/about_me';

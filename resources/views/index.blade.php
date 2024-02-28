@@ -2,7 +2,7 @@
 
 @section('body')
 <x-navbar />
-<x-sidebar/>
+<x-sidebar />
 
 <!--SECTION HERO-->
 <section class="hero">
@@ -10,7 +10,20 @@
     <h1>Portfolio</h1>
     <p>Toufik BOUKICHOU en BTS SIO</p>
   </div>
-    <a href="#parcours-id">Voir plus</a>
+  <a href="#about-me-id">Voir plus</a>
+</section>
+
+<!--SECTION QUI-SUIS JE-->
+<section class="about-me" id="about-me-id">
+  <div class="about-me-img">
+    <img src="{{ asset('img/image.png') }}" alt="">
+  </div>
+  <div class="about-me-text">
+    <h1>Qui suis-je ?</h1>
+    <p>Je m'appelle Toufik Boukichou, j'ai 20 ans, <strong>étudiant</strong> en <strong>BTS Services Informatiques aux Organisations (SIO)</strong> résidant à <strong>Valenciennes</strong>. Mon parcours académique m'a ouvert les portes d'un univers qui me passionne profondément : l'informatique.
+      Au fil de mon cursus, j'ai développé des compétences solides en développement, gestion de projets et maintenance des systèmes d'information. Mon intérêt pour la résolution de problèmes informatiques et la création de solutions novatrices a été le moteur de mon engagement dans ce domaine en constante évolution.
+    </p>
+  </div>
 </section>
 
 <!--SECTION PARCOUR-->
@@ -45,5 +58,5 @@
     </div>
   </div>
 </section>
-<x-footer/>
+<x-footer />
 @endsection

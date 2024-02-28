@@ -1,0 +1,40 @@
+.about-me {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-top: 5em;
+    padding-top: 5em;
+    &-img {
+        max-width: 600px;
+
+        img{
+            max-width: inherit;
+        }
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+
+        h1 {
+            font-size: 45px;
+
+            &::after {
+                    content: "";
+                    height: 6px;
+                    width: 85px;
+                    margin:  10px 5px;
+                    display: block;
+                    background-color: black;
+                    border-radius: 10px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}

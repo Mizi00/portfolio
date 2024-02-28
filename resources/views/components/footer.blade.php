@@ -55,7 +55,7 @@
 
         </div>
         <div class="footer-credit">
-            <span>©Porfilio BOUKICHOU Toufik</span>
+            <span>©Porfolio BOUKICHOU Toufik</span>
         </div>
     </div>
 </footer>
