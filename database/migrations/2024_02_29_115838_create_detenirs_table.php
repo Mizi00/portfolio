@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('avoirs', function (Blueprint $table) {
+        Schema::create('detenirs', function (Blueprint $table) {
             $table->id();
             //$table->timestamps();
-            
-            //clé étrangère
-            $table->unsignedBigInteger('idCompetence');
-            $table->unsignedBigInteger('idRealisation');
 
-            //relation avec les tables
-            $table->foreign('idCompetence')->references('id')->on('competences');
+            $table->unsignedBigInteger('idRealisation');
+            $table->unsignedBigInteger('idSousCompetence');
+
             $table->foreign('idRealisation')->references('id')->on('realisations');
+            $table->foreign('idSousCompetence')->references('id')->on('sous_competences');
+
+
+
         });
     }
 
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('avoirs');
+        Schema::dropIfExists('detenirs');
     }
 };

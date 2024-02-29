@@ -30,6 +30,6 @@ Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n
 Route::middleware('auth')->group(function() {
     Route::view('admin', 'admin.index')->name('homeAdmin');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-    Route::get('realisation-admin', [RealisationController::class, 'show'])->name('realisationAdmin');
+    Route::get('realisation-admin', [RealisationController::class, 'index'])->name('realisationAdmin');
 });
 

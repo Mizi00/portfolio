@@ -17,6 +17,8 @@ class RealisationFactory extends Factory
     public function definition(): array
     {
         return [
+            'titre' => fake()->sentence(),
+            'description' => fake()->paragraph(2, true)
         ];
     }
 }

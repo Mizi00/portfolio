@@ -8,5 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Realisation extends Model
 {
     use HasFactory;
-    //public $timestamps = false;
+
+    public function recupCompetence()
+    {
+        return $this->belongsToMany(Competence::class, 'avoirs', 'idRealisation', 'idCompetence');
+    }
+
+    public function recupSousCompetence()
+    {
+        return $this->belongsToMany(SousCompetence::class, 'detenirs', 'idRealisation', 'idSousCompetence');
+    }
 }

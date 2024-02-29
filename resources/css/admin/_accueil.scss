@@ -1,0 +1,52 @@
+.home {
+    margin: 15px 40px;
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+            //text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $defaultColor;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    &-content {
+        color: $defaultColor;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 35px;
+            margin: 0;
+
+            &::after {
+                content: "";
+                height: 3px;
+                width: 95px;
+                margin: 10px 5px;
+                display: block;
+                background-color: black;
+                border-radius: 10px;
+            }
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 35px;
+            letter-spacing: 0.5px;
+        }
+    }
+}

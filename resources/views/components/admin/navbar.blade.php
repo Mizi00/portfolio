@@ -5,9 +5,9 @@
         </div>
         <div class="header-menu">
             <ul class="nav-menu">
-                <li><a class="{{ Route::is('homeAdmin') ? 'menu-link-active' : '' }}" href="{{ route('homeAdmin') }}"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a class="{{ Route::is('realisationAdmin') ? 'menu-link-active' : '' }}"  href="{{ route('realisationAdmin') }}"><i class="fa-solid fa-house"></i>Realisation</a></li>
-                <li><a class="{{ Route::is('realisation') ? 'menu-link-active' : '' }}" href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a class="{{ Route::is('homeAdmin') ? 'menu-link-active' : '' }}" href="{{ route('homeAdmin') }}"><i class="fa-solid fa-house"></i>Accueil</a></li>
+                <li><a class="{{ Route::is('realisationAdmin') ? 'menu-link-active' : '' }}"  href="{{ route('realisationAdmin') }}"><i class="fa-solid fa-address-card"></i></i>Réalisation</a></li>
+                <li><a class="{{ Route::is('realisation') ? 'menu-link-active' : '' }}" href="#"><i class="fa-solid fa-user"></i>Compétence</a></li>
             </ul>
         </div>
         <div class="navbar-right">

@@ -2,10 +2,32 @@
 
 $hoverTransition : all 0.5s ease-in-out;
 
+.realisation-admin-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $defaultColor;
+    margin-top: 25px;
+
+    h1 {
+        font-size: 35px;
+        margin: 5px 0;
+    }
+
+    span {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bolder;
+    }
+}
+
 .table-div {
     display: block;
     overflow-x: auto;
+    margin: 0 35px;
     margin-top: 4rem;
+    
 }
 
 .table-realisation {
