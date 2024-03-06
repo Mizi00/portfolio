@@ -63,3 +63,25 @@
 
     }
 }
+
+@media screen and (max-width: 1024px) {
+        .about-me {
+            flex-direction: column;
+            margin: 0 10px;
+
+            &-img {
+                max-width: 400px;
+                width: 100%;
+            }
+            
+            &-text {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                h1::after {
+                    width: 100%;
+                }
+            }
+        }
+}

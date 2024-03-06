@@ -4,7 +4,7 @@
         @auth
         <li><a href="{{ route('homeAdmin') }}">tableau de bord</a></li>
         @endauth
-        <li><a href="#">Qui suis-je ?</a></li>
+        <li><a href="#about-me-id">Qui suis-je ?</a></li>
         <li><a href="{{ route('realisation') }}">Réalisations</a></li>
         <li><a href="#">Compétences</a></li>
         <li><a href="{{ route('veille') }}">Veille</a></li>

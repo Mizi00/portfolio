@@ -1,7 +1,8 @@
 <div class="sidebar" id="sidebar">
-    <ul class="main-nav">
-        <li><a href="#">Qui suis-je ?</a></li>
-        <li><a href="#">Réalisations</a></li>
+    <div id="cross-button"><i class="fa-solid fa-xmark cross"></i></div>
+    <ul class="main-nav"> 
+        <li><a href="#about-me-id" id="a-button">Qui suis-je ?</a></li>
+        <li><a href="{{ route('realisation') }}">Réalisations</a></li>
         <li><a href="#">Compétences</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
