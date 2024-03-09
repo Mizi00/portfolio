@@ -1,5 +1,7 @@
 .parcours {
-    padding-top: 30px;
+    padding: 50px 0;
+    padding-bottom: 80px;
+    background-color: #fff;
     &-timeline {
         position: relative;
         max-width: 1200px;
@@ -9,7 +11,7 @@
             content: '';
             position: absolute;
             width: 6px;
-            background-color: white;
+            background-color: $graydefault;
             top: 0;
             bottom: 0;
             left: 50%;
@@ -37,7 +39,7 @@
 
             .content {
                 padding: 20px 30px;
-                background-color: white;
+                background-color: $graydefault;
                 position: relative;
                 border-radius: 6px;
             }
@@ -53,10 +55,10 @@
                 top: 22px;
                 width: 0;
                 z-index: 1;
-                right: 30px;
-                border: medium solid white;
+                right: 30.5px;
+                border: medium solid $graydefault;
                 border-width: 10px 0 10px 10px;
-                border-color: transparent transparent transparent white;
+                border-color: transparent transparent transparent $graydefault;
             }
         }
 
@@ -70,10 +72,10 @@
                 top: 22px;
                 width: 0;
                 z-index: 1;
-                left: 30px;
-                border: medium solid white;
+                left: 30.5px;
+                border: medium solid $graydefault;
                 border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
+                border-color: transparent $graydefault transparent transparent;
             }
 
             &::after {
