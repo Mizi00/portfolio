@@ -8,7 +8,7 @@
         <li><a href="{{ route('realisation') }}">Réalisations</a></li>
         <li><a href="#">Compétences</a></li>
         <li><a href="{{ route('veille') }}">Veille</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="button-sidebar" id="button-sidebar"><a><i class="fa-solid fa-bars"></i></a></div>
 </header>

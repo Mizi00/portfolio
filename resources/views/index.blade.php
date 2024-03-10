@@ -26,7 +26,7 @@
     <div class="about-me-text-button">
       <a href="">Mon CV</a>
     </div>
-    
+
   </div>
 </section>
 
@@ -60,6 +60,41 @@
         <p>Réaliser chez ValHainaut Auto</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!--SECTION CONTACT-->
+<section class="contact" id="contact">
+  <div class="contact-about-me">
+    <h1>Me Contactez</h1>
+    <ul>
+      <li><b>Tel:</b> <a href="">06.10.40.49.23</a></li>
+      <li><b>Mail:</b> <a href="">toufikboukichou2@gmail.com</a></li>
+    </ul>
+  </div>
+  <div class="contact-form">
+    <form action="">
+      <div class="form-element">
+        <label for="">Nom:</label>
+        <input type="text" placeholder="Ex: Dohn">
+      </div>
+      <div class="form-element">
+        <label for="">Prénom:</label>
+        <input type="text" placeholder="Ex: Joe">
+      </div>
+      <div class="form-element">
+        <label for="">Tél:</label>
+        <input type="text" placeholder="Ex:0612345678">
+      </div>
+      <div class="form-element">
+        <label for="">Message:</label>
+        <textarea name="" id="" cols="50" rows="10" placeholder="Votre message ..."></textarea>
+      </div>
+      <div class="form-element-button">
+        <input type="submit" value="Envoyer">
+      </div>
+
+    </form>
   </div>
 </section>
 <x-footer />

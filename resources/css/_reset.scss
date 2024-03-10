@@ -9,6 +9,10 @@ body {
     min-height: 100vh;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 ul {
     margin: 0;
     padding: 0;
