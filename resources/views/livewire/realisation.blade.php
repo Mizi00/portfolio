@@ -7,7 +7,7 @@
             <th>ID</th>
             <th>Titre</th>
             <th>Description</th>
-            <th>id competence</th>
+            <th></th>
         </thead>
         <tbody class="table-body">
             @forelse($realisations as $realisation)
@@ -15,7 +15,7 @@
                 <th>{{ $realisation->id }}</th>
                 <td>{{ $realisation->titre }}</td>
                 <td>{{ $realisation->description }}</td>
-                <td>{{ $realisation->recupCompetence()?->id }}</td>
+                <td><a href="">Voir</a></td>
             </tr>
             @empty
             <tr>
