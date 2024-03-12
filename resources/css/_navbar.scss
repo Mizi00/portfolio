@@ -31,6 +31,7 @@ a {
 .button-sidebar {
     display: none;
     cursor: pointer;
+    font-size: 20px;
 
     @media screen and (max-width: 1024px) {
         display: block;
