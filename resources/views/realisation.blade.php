@@ -11,7 +11,7 @@
 
   @for($i=0;$i<=10;$i++) <article class="card">
     <div class="card-img">
-      <img src="{{ asset('img/face.png') }}" alt="">
+      <img src="{{ asset('img/img.jpg') }}" alt="">
     </div>
     <div class="content-card">
       <h1>TEST</h1>
