@@ -77,15 +77,19 @@
       <form action="">
         <div class="form-element">
           <label for="">Nom:</label>
-          <input type="text" placeholder="Ex: Dohn">
+          <input type="text" placeholder="Ex: Doe">
         </div>
         <div class="form-element">
-          <label for="">Prénom:</label>
-          <input type="text" placeholder="Ex: Joe">
+          <label for="">Mail:</label>
+          <input type="text" placeholder="Ex: johndoe@exemple.com">
         </div>
         <div class="form-element">
-          <label for="">Tél:</label>
+          <label for="">Téléphone:</label>
           <input type="text" placeholder="Ex:0612345678">
+        </div>
+        <div class="form-element">
+          <label for="">Objet:</label>
+          <input type="text" placeholder="John Doe exemple">
         </div>
         <div class="form-element">
           <label for="">Message:</label>
