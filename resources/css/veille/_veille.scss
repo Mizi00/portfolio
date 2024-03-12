@@ -34,12 +34,10 @@
         margin: 10px 0;
 
         &-img {
-            
-            
             img {
                 height: 150px;
                 width: 260px;
-                
+                object-fit: cover;
                 border-radius: 12px;
             }
         }
@@ -74,6 +72,29 @@
                         background-color: rgba(0, 0, 0, 0.3);
                     }
                 }
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            flex-direction: column;
+
+            &-element {
+                max-width: 300px;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        gap: 20px;
+
+        &-title {
+            h1 {
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
             }
         }
     }
