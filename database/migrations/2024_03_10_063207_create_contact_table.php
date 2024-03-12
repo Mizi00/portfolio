@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('message',500);
 
             $table->unsignedBigInteger('idUser');
-            $table->foreign('idUser')->references('id')->on('user');
+            $table->foreign('idUser')->references('id')->on('users');
         });
     }
 
