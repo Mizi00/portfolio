@@ -5,9 +5,9 @@
     align-items: center;
     gap: 5em;
     margin-top: 5em;
-    padding-top: 7em;
+    padding-top: 7em !important;
     margin-bottom: 5em;
-    padding-bottom: 3em;
+    padding-bottom: 3em !important;
 
     &-img {
         max-width: 600px;
@@ -65,6 +65,12 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-me {
+        padding: 0 20px;
     }
 }
 
