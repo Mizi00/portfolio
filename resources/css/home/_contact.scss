@@ -1,17 +1,28 @@
 .contact {
     padding: 4em 0;
     padding-top: 6em;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
 
-    @media screen and (max-width: 700px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
+    .contact-container {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            gap: 50px;
+        }
     }
 
+
+
     &-about-me {
+        width: 50%;
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+        }
+
         h1 {
             font-size: 45px;
             margin: 0;
@@ -21,11 +32,23 @@
                 content: "";
                 height: 6px;
                 width: 125px;
-                margin: 10px 5px;
+                margin: 15px 5px;
                 display: block;
                 background-color: black;
                 border-radius: 10px;
+
+                @media screen and (max-width: 800px) {
+                    margin: 10px auto;
+
+                    ul {
+                        text-align: center;
+                    }
+                }
             }
+        }
+
+        @media screen and (max-width: 800px) {
+            text-align: center;
         }
 
         li {
@@ -35,6 +58,7 @@
 
     &-form {
         margin-top: 15px;
+
         form {
             display: flex;
             flex-direction: column;
@@ -67,13 +91,16 @@
                     transition: border 0.3s ease-in-out; // agrandir les label et la taille des input
                 }
 
-                input:focus, textarea:focus {
+                input:focus,
+                textarea:focus {
                     outline: none;
                     border: 2px solid rgb(122, 122, 122);
                 }
             }
+
             .form-element-button {
                 margin-top: 10px;
+
                 input {
                     font-size: 15px;
                     font-weight: 400;
@@ -87,6 +114,15 @@
 
                     &:hover {
                         background-color: #636363;
+                    }
+                }
+
+                @media screen and (max-width: 800px) {
+                    input {
+                        display: block;
+                        margin: 0 auto;
+                        font-size: 20px;
+                        padding: 10px 50px;
                     }
                 }
             }
