@@ -65,6 +65,10 @@ footer {
                 z-index: 1;
                 top: -5px;
                 left: 105%;
+
+                @media screen and (max-width: 800px) {
+                    display: none;
+                }
             }
 
             &:hover {

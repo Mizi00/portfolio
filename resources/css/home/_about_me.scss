@@ -45,6 +45,7 @@
             display: flex;
             justify-content: end;
             padding-right: 10px;
+
             a {
                 color: #fff;
                 font-size: 23px;
@@ -64,23 +65,35 @@
 }
 
 @media screen and (max-width: 1024px) {
-        .about-me {
-            flex-direction: column;
-            margin: 0 10px;
+    .about-me {
+        flex-direction: column;
 
-            &-img {
-                max-width: 400px;
-                width: 100%;
-            }
-            
-            &-text {
-                align-items: center;
-                justify-content: center;
-                text-align: center;
+        &-img {
+            max-width: 400px;
+            width: 100%;
 
-                h1::after {
-                    width: 100%;
-                }
+            @media screen and (max-width: 450px) {
+                max-width: 300px;
             }
         }
+
+        &-text {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            @media screen and (max-width: 500px) {
+                p {
+                    font-size: 17px;
+                    margin: 10px 5px;
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            h1::after {
+                width: 100%;
+            }
+        }
+    }
 }
