@@ -91,6 +91,11 @@
 
         h1 {
             font-size: 55px;
+
+            @media screen and (max-width: 400px) {
+                font-size: 40px;
+                text-align: center;
+            }
         }
     }
 }
