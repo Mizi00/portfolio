@@ -26,6 +26,12 @@
         }
     }
 
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &-content {
         display: flex;
         justify-content: center;
@@ -33,6 +39,10 @@
         gap: 15px;
         margin: 10px 0;
 
+        padding: 1em;
+        border-radius: 16px;
+        background-color: #fff;
+        
         &-img {
             img {
                 height: 150px;
@@ -46,10 +56,12 @@
             display: flex;
             flex-direction: column;
             max-width: 350px;
+
             span {
                 color: rgba(0, 0, 0, 0.6);
                 text-decoration: underline;
             }
+
             h2 {
                 margin: 0;
                 font-size: 25px;
@@ -58,6 +70,7 @@
             &-button {
                 display: flex;
                 justify-content: end;
+
                 a {
                     color: black;
                     font-size: 15px;
@@ -93,7 +106,8 @@
             h1 {
                 font-size: 20px;
             }
-            p{
+
+            p {
                 font-size: 15px;
             }
         }
