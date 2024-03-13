@@ -3,7 +3,8 @@
 use App\Models\Realisation;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\RealisationController;
+use App\Http\Controllers\Admin\RealisationController as PublicRealisationController;
+use App\Http\Controllers\Admin\RealisationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ use App\Http\Controllers\RealisationController;
 */
 
 Route::view('/', 'index')->name('home');
-Route::view('realisation', 'realisation')->name('realisation');
+Route::get('realisation', [PublicRealisationController::class, 'index'])->name('realisation');
 
 Route::view('veille', 'veille.index')->name('veille');
     
