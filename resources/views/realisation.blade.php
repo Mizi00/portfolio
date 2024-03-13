@@ -9,20 +9,22 @@
 
 <div class="contain-card">
 
-  @for($i=0;$i<=10;$i++) <article class="card">
+@forelse($realisations as $realisation)
+<article class="card">
     <div class="card-img">
       <img src="{{ asset('img/img.jpg') }}" alt="">
     </div>
     <div class="content-card">
-      <h1>TEST</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Ipsum ipsa odit accusamus distinctio dolorem nesciunt facilis perferendis fuga at, sequi,</p>
+      <h1>{{ $realisation->titre }}</h1>
+      <p>{{ $realisation->description }}</p>
       <a href="#">
         <div class="button">Voir plus</div>
       </a>
     </div>
     </article>
-    @endfor
+    @empty
+    <p>Pas de réalisation pour l'instant ...</p>
+    @endforelse
 </div>
 
 <x-footer />
