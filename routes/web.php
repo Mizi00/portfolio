@@ -18,7 +18,7 @@ use App\Http\Controllers\Admin\RealisationController as PublicRealisationControl
 |
 */
 Route::controller(HomeController::class)->group(function() {
-    Route::view('/', 'index')->name('home');
+    Route::get('/', 'index')->name('home');
     Route::post('/', 'getContact');
 });
 Route::get('realisation', [PublicRealisationController::class, 'index'])->name('realisation');
