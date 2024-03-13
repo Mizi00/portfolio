@@ -18,7 +18,7 @@ class RealisationFactory extends Factory
     {
         return [
             'titre' => fake()->sentence(),
-            'description' => fake()->paragraph(1, true)
+            'description' => fake()->paragraph(2, true)
         ];
     }
 }
