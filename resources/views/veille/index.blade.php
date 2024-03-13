@@ -15,7 +15,7 @@
     <div class="veille-container">
         <div class="veille-content">
             <div class="veille-content-img">
-                <img src="https://media.tenor.com/TnpzEhvcjdAAAAAM/jen-ai-vu-des-chose.gif" alt="">
+                <img src="{{ asset('img/face.png') }}" alt=""> <!--https://media.tenor.com/TnpzEhvcjdAAAAAM/jen-ai-vu-des-chose.gif-->
             </div>
             <div class="veille-content-element">
                 <span>12/12/2023</span>
