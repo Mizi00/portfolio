@@ -50,6 +50,7 @@
     <div class="mail">
         <h1>Mail de {{ $data['nom'] }}</h1>
         <ul>
+            <li><b>Ip:</b> {{ Request::ip() }}</li>
             <li><b>Mail:</b> {{ $data['mail'] }}</li>
             <li><b>Tél:</b> {{ $data['tel'] }}</li>
             <li><b>Objet:</b> {{ $data['objet'] }}</li>

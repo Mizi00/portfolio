@@ -1,9 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
-
 body{
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     font-size: 0.875rem;
+    background-color: rgba(191, 191, 191, 0.4);
     &.body-white {
         background-color: #ffff;
     }
