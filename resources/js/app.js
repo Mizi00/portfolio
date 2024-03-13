@@ -45,10 +45,5 @@ if (sidebar && navBarButton && mask) {
         mask.classList.remove('show');
         document.body.style.overflow = "auto";
     });
-
-    
-
-
-
 }
 
