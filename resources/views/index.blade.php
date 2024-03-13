@@ -78,27 +78,45 @@
         @csrf
         <div class="form-element">
           <label for="">Nom:</label>
-          <input type="text" name="nom" placeholder="Ex: Doe">
+          <input type="text" class="@error('nom') is-invalid @enderror" name="nom" placeholder="Ex: Doe">
+          @error('nom')
+          <div class="form-error">{{ $message }}</div>
+          @enderror
         </div>
         <div class="form-element">
           <label for="">Mail:</label>
-          <input type="text" name="mail" placeholder="Ex: johndoe@exemple.com">
+          <input type="text" class="@error('mail') is-invalid @enderror" name="mail" placeholder="Ex: johndoe@exemple.com">
+          @error('mail')
+          <div class="form-error">{{ $message }}</div>
+          @enderror
         </div>
         <div class="form-element">
           <label for="">Téléphone:</label>
-          <input type="text" name="tel" placeholder="Ex:0612345678">
+          <input type="text" name="tel" class="@error('tel') is-invalid @enderror" placeholder="Ex:0612345678">
+          @error('tel')
+          <div class="form-error">{{ $message }}</div>
+          @enderror
         </div>
         <div class="form-element">
           <label for="">Objet:</label>
-          <input type="text" name="objet" placeholder="John Doe exemple">
+          <input type="text" name="objet" class="@error('objet') is-invalid @enderror" placeholder="John Doe exemple">
+          @error('objet')
+          <div class="form-error">{{ $message }}</div>
+          @enderror
         </div>
         <div class="form-element">
           <label for="">Message:</label>
-          <textarea name="message" id="" cols="50" rows="10" placeholder="Votre message ..."></textarea>
+          <textarea name="message" id="" cols="50" class="@error('message') is-invalid @enderror" rows="10" placeholder="Votre message ..."></textarea>
+          @error('message')
+          <div class="form-error">{{ $message }}</div>
+          @enderror
         </div>
         <div class="form-element-button">
           <input type="submit" value="Envoyer">
         </div>
+        @if(session('success'))
+          <div class="form-success">{!! session('success') !!}</div>
+        @endif
 
       </form>
     </div>
