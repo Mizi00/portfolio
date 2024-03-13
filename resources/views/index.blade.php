@@ -74,26 +74,27 @@
       </ul>
     </div>
     <div class="contact-form">
-      <form action="">
+      <form action="{{ route('home') }}" method="post">
+        @csrf
         <div class="form-element">
           <label for="">Nom:</label>
-          <input type="text" placeholder="Ex: Doe">
+          <input type="text" name="nom" placeholder="Ex: Doe">
         </div>
         <div class="form-element">
           <label for="">Mail:</label>
-          <input type="text" placeholder="Ex: johndoe@exemple.com">
+          <input type="text" name="mail" placeholder="Ex: johndoe@exemple.com">
         </div>
         <div class="form-element">
           <label for="">Téléphone:</label>
-          <input type="text" placeholder="Ex:0612345678">
+          <input type="text" name="tel" placeholder="Ex:0612345678">
         </div>
         <div class="form-element">
           <label for="">Objet:</label>
-          <input type="text" placeholder="John Doe exemple">
+          <input type="text" name="objet" placeholder="John Doe exemple">
         </div>
         <div class="form-element">
           <label for="">Message:</label>
-          <textarea name="" id="" cols="50" rows="10" placeholder="Votre message ..."></textarea>
+          <textarea name="message" id="" cols="50" rows="10" placeholder="Votre message ..."></textarea>
         </div>
         <div class="form-element-button">
           <input type="submit" value="Envoyer">

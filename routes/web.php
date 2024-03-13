@@ -3,8 +3,9 @@
 use App\Models\Realisation;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\Admin\RealisationController as PublicRealisationController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\RealisationController;
+use App\Http\Controllers\Admin\RealisationController as PublicRealisationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +17,11 @@ use App\Http\Controllers\Admin\RealisationController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::view('/', 'index')->name('home');
+Route::controller(HomeController::class)->group(function() {
+    Route::view('/', 'index')->name('home');
+    Route::post('/', 'getContact');
+});
 Route::get('realisation', [PublicRealisationController::class, 'index'])->name('realisation');
-
 Route::view('veille', 'veille.index')->name('veille');
     
 Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
