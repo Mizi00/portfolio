@@ -1,6 +1,6 @@
 <div class="sidebar" id="sidebar">
     <div id="cross-button"><i class="fa-solid fa-xmark cross"></i></div>
-    <ul class="main-nav">
+    <ul class="main-nav" id="main-nav">
         @auth
         <li><a href="{{ route('homeAdmin') }}">tableau de bord</a></li>
         @endauth
