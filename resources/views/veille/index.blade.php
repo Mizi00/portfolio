@@ -22,7 +22,7 @@
                 <h2>Article n°{{ $i }}</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a odit velit enim ad beatae.</p>
                 <div class="veille-content-element-button">
-                    <a href="">Voir Plus</a>
+                    <a href="">Voir plus</a>
                 </div>
             </div>
         </div>
