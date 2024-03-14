@@ -15,7 +15,7 @@
                 <th>{{ $realisation->id }}</th>
                 <td>{{ $realisation->titre }}</td>
                 <td>{{ $realisation->description }}</td>
-                <td><a href="">Voir</a></td>
+                <td><a href="{{ route('realisationEdit', $realisation->id) }}">Editer</a></td>
             </tr>
             @empty
             <tr>

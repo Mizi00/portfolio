@@ -16,8 +16,10 @@ class RealisationFactory extends Factory
      */
     public function definition(): array
     {
+        $sousTitre = ucfirst(fake()->word) . ', ' . fake()->word . ', ' . fake()->word;
         return [
             'titre' => fake()->sentence(),
+            'sous-titre' => $sousTitre,
             'description' => fake()->paragraph(2, true)
         ];
     }

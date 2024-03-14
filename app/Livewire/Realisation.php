@@ -15,7 +15,7 @@ class Realisation extends Component
         $realisations = RealisationModel::query()
             ->when($this->search, function($query){
                 return $query->where('titre', 'like', "%{$this->search}%");
-            })->paginate(10);
+            })->paginate(5);
         
         return view('livewire.realisation', compact('realisations'));
     }

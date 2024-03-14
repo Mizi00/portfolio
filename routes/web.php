@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\RealisationController;
-use App\Http\Controllers\Admin\RealisationController as PublicRealisationController;
+use App\Http\Controllers\RealisationController as PublicRealisationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +30,10 @@ Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n
     Route::post('login', [AuthController::class, 'login']);
 });
 
-Route::middleware('auth')->group(function() {
-    Route::view('admin', 'admin.index')->name('homeAdmin');
-    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-    Route::get('realisation-admin', [RealisationController::class, 'index'])->name('realisationAdmin');
+Route::middleware('auth')->prefix('admin')->group(function() {
+    Route::view('/', 'admin.index')->name('homeAdmin');
+    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('realisations', [RealisationController::class, 'index'])->name('realisationAdmin');
+    Route::get('realisation/edit/{realisation}',[RealisationController::class, 'edit'])->name('realisationEdit'); //model binding
 });
 
