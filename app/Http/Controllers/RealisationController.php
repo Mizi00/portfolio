@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 
 class RealisationController extends Controller
 {
-    public function index(){
-        return view('admin.realisation.index');
+    public function index() {
+        
+        $realisations = Realisation::latest()->get();
+        return view('realisation', compact('realisations'));
     }
 }
