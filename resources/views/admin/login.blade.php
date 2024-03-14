@@ -1,23 +1,28 @@
 @extends('layouts.app')
 
 @section('body')
-<x-navbar />
-<x-sidebar />
-
-<div class="contain log-space">
-    <form action="{{ route('login') }}" method="POST" class="contain-log">
-        @csrf
-        <h2>Se Connecter</h2>
-        <div class="contain-text">
-            <input type="email" id="email" name="email" placeholder="Ex: joe@exemple.fr" value="{{ old('email') }}">  <!--récupère l'input (avant d'appuyer sur connexion)-->
-            <input type="password" id="psswd" name="password" placeholder="Entrez votre mot de passe">
-            @foreach($errors->all() as $error)
-                <div class="error">{{ $error }}</div>
-            @endforeach
+<div class="contain-log">
+    @if(session('error'))
+    <div class="form-errors">{{ session('error') }}</div>
+    @endif
+    <div class="log">
+        <div class="log-title">
+            <h1>Connectez-vous</h1>
         </div>
-        <input type="submit" id="button" value="Connexion">
-    </form>
+        <form action="{{ route('login') }}" method="POST">
+            @csrf
+            <div class="form-element">
+                <label for="">Nom d'utilisateur</label>
+                <input type="text" class="@error('message') is-invalid @enderror" name="name" value="{{ old('nom') }}" placeholder="Ex: john5599">
+            </div>
+            <div class="form-element">
+                <label for="">Mot de passe</label>
+                <input type="password" class="@error('message') is-invalid @enderror" name="password" placeholder="Secret...">
+            </div>
+            <div class="form-element-button">
+                <input type="submit" value="Se connecter">
+            </div>
+        </form>
+    </div>
 </div>
-<x-footer :position="1" />
-
 @endsection

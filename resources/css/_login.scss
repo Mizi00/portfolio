@@ -1,86 +1,103 @@
-//CONST
-
-$hoverTransition : all 0.5s ease-in-out;
-
-body {
-  background-color: rgba(191, 191, 191, 0.40);
-}
-
-.contain {
+.contain-log {
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.log-space{
-  margin-top: 40px;
-}
-
-.contain-log {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+.log {
+  max-width: 440px;
   width: 100%;
-  text-align: center;
+  max-height: 350px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-top: 20px;
+  border: 1px solid #00000047;
 
-  input {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
 
-    &:focus {
-      transition: $hoverTransition;
-      outline: 0;
-      border: 2px solid #0d42778f;
+    .form-element {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 320px;
+
+      label {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+
+      input {
+        height: 30px;
+        padding: 5px 5px;
+        border-radius: 3px;
+        border: 1px solid #00000059;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(75, 73, 73, 0.25);
+          border-color: #545454;
+          outline: none;
+        }
+      }
+    }
+
+    .form-element-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      max-width: 320px;
+      width: 100%;
+
+      input {
+        border-radius: 3px;
+        background-color: #000;
+        color: #fff;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #000000be;
+        }
+      }
     }
   }
-
-  #button {
-    background-color: #34495e;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;
-    padding: 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 95%;
-    margin-top: 10px;
-    transition: background-color 0.5s ease-in-out;
-  }
-
-  #button:hover{
-      
-      background-color: #65809c;
-  }
-
-  .contain-text{
-    margin: 0 19px;
-  }
-
-  .error{
-    color: red;
-    font-size: 13px;
-    text-align: left;
-    
-  }
 }
 
-@media screen and (max-width: 600px) {
-  .contain-log{
-    max-width: 100%;
-  }
+.form-errors {
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+  padding: 1em;
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.352);
+}
 
-  input{
-    margin-bottom: 10px;
-  }
+.is-invalid {
+  border-color: #dc3545 !important;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
-  #button{
-    padding: 12px;
+  &:focus {
+      border-color: #dc3545 !important;
+      box-shadow: 0 0 0 0.25rem rgba(220,53,69,.25) !important;
   }
-  
 }

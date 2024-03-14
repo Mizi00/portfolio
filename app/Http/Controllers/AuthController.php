@@ -16,8 +16,8 @@ class AuthController extends Controller
     {
 
         $login = $request->validate([
-            'name' => ['required'],
-            'password' => ['required']
+            'name' => 'required',
+            'password' => 'required'
         ]);
 
         if (Auth::attempt($login)) { //tente de connecter le user
@@ -26,9 +26,7 @@ class AuthController extends Controller
             return redirect()->intended(route('homeAdmin')); //rediriger automatiquement à l'endroit à laquel le user voulais accéder (ex: user veut aller sur la page back office, besoin de se connecter. Il tombe sur le formulaire de connexion, il se connecte et revient automatiquement sur le back office)
         }
 
-        return back()->withErrors([ // méthode back() = faire une redirection vers la précedente page ou on été si le les id sont eronés
-            'email' => 'Identifiants erronés.'
-        ])->onlyInput('email'); // sert à remettre l'email dans le formulaire pour le user (il aura simplement à remettre le MDP)  || withInput() sert à tous garder email et MDP
+        return back()->with('error', 'Informations incorect'); // sert à remettre l'email dans le formulaire pour le user (il aura simplement à remettre le MDP)  || withInput() sert à tous garder email et MDP
 
     }
 
