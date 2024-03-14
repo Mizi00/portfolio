@@ -85,21 +85,21 @@
         </div>
         <div class="form-element">
           <label for="">Mail:</label>
-          <input type="text" class="@error('mail') is-invalid @enderror" name="mail" placeholder="Ex: johndoe@exemple.com">
+          <input type="email" class="@error('mail') is-invalid @enderror" name="mail" placeholder="Ex: johndoe@exemple.com">
           @error('mail')
           <div class="form-error">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-element">
           <label for="">Téléphone:</label>
-          <input type="text" name="tel" class="@error('tel') is-invalid @enderror" placeholder="Ex:0612345678">
+          <input type="tel" name="tel" class="@error('tel') is-invalid @enderror" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required placeholder="Ex:0612345678">
           @error('tel')
           <div class="form-error">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-element">
           <label for="">Objet:</label>
-          <input type="text" name="objet" class="@error('objet') is-invalid @enderror" placeholder="John Doe exemple">
+          <input type="text" name="objet" class="@error('objet') is-invalid @enderror" maxlength="70" required placeholder="John Doe exemple">
           @error('objet')
           <div class="form-error">{{ $message }}</div>
           @enderror
