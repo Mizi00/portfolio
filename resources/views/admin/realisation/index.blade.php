@@ -20,7 +20,7 @@
         title: ' {{ session('success') ? 'Succès ' : 'Supprimer' }}',
         message: '{{ session('success') ? session('success') : session('delete') }}',
         location: 'top-right',
-        icon: false,
+        icon: true,
         dismissable: true,
         type: '{{ session('success') ? 'success' : 'error' }}'
     });
