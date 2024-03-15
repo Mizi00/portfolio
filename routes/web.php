@@ -37,5 +37,7 @@ Route::middleware('auth')->prefix('admin')->group(function() {
 
     Route::get('realisation/edit/{realisation}',[RealisationController::class, 'edit'])->name('realisationEdit'); //model binding
     Route::post('realisation/edit/{realisation}', [RealisationController::class, 'update']);
+
+    Route::get('/realisation/add', [RealisationController::class, 'add'])->name('add');
 });
 

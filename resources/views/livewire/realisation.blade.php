@@ -1,5 +1,6 @@
 <div>
     <div class="div-search">
+        <a href="{{ route('add') }}">Créer une réalisation</a>
         <input class="search-annonce" type="text" wire:model.live="search" placeholder="Rechercher ...">
     </div>
     <table class="table-realisation">
@@ -14,7 +15,7 @@
             <tr>
                 <th>{{ $realisation->id }}</th>
                 <td>{{ $realisation->titre }}</td>
-                <td>{{ $realisation->description }}</td>
+                <td>{!! $realisation->description !!}</td>
                 <td><a href="{{ route('realisationEdit', $realisation->id) }}">Editer</a></td>
             </tr>
             @empty

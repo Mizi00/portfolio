@@ -19,7 +19,7 @@ class RealisationController extends Controller
     }
 
     public function update(Realisation $realisation, Request $request) {
-        $request->validate([
+       $request->validate([
             'titre' => 'required',
             'soustitre' => 'required',
             'uploads' => 'required',
@@ -29,5 +29,23 @@ class RealisationController extends Controller
         $realisation->update($request->except('uploads'));
         
         dd($request->all());
+    }
+
+    public function add(Realisation $realisation)
+    {
+        return view('admin.realisation.index', compact('realisation'));
+    }
+
+    public function validateAdd(Realisation $realisation, Request $request) {
+        $credentials = $request->validate([
+            'titre' => 'required',
+            'soustitre' =>'required',
+            'uploads' => 'required',
+            'description' => 'required'
+        ]);
+
+        $realisation->insert($credentials);
+
+        return redirect()->route('realisationAdmin')->with('sucess', 'Réalisation ajouter avec succées')->withInput();
     }
 }
