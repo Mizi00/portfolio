@@ -14,11 +14,11 @@
                 @csrf
                 <div class="realisation-edit-element">
                     <label for="">Titre</label>
-                    <input type="text" value="{{ $realisation->titre }}" name="titre">
+                    <input type="text" value="{{ $realisation->titre }}" name="titre" autocomplete="off">
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Sous-titre</label>
-                    <input type="text" value="{{ $realisation->soustitre }}" name="soustitre">
+                    <input type="text" value="{{ $realisation->soustitre }}" name="soustitre" autocomplete="off">
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Uploads</label>

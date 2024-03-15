@@ -14,11 +14,11 @@
                 @csrf
                 <div class="add-element">
                     <label for="">Titre</label>
-                    <input type="text" name="titre">
+                    <input type="text" name="titre" autocomplete="off">
                 </div>
                 <div class="add-element">
                     <label for="">Sous-titre</label>
-                    <input type="text" name="soustitre">
+                    <input type="text" name="soustitre" autocomplete="off">
                 </div>
                 <div class="add-element">
                     <label for="">Uploads</label>
@@ -37,7 +37,7 @@
                     </select>
                 </div>
                 <div class="add-element">
-                    <label for="">Text</label>
+                    <label for="">Texte</label>
                     <div id="editor" style="height: 300px;"></div>
                     <input type="hidden" id="quill_html" name="description">
                 </div>
