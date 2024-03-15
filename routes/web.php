@@ -34,6 +34,8 @@ Route::middleware('auth')->prefix('admin')->group(function() {
     Route::view('/', 'admin.index')->name('homeAdmin');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('realisations', [RealisationController::class, 'index'])->name('realisationAdmin');
+
     Route::get('realisation/edit/{realisation}',[RealisationController::class, 'edit'])->name('realisationEdit'); //model binding
+    Route::post('realisation/edit/{realisation}', [RealisationController::class, 'update']);
 });
 

@@ -10,22 +10,23 @@
     <div class="realisation-edit-content">
         <h2>Édition</h2>
         <div class="realisation-edit-form">
-            <form action="">
+            <form action="{{ route('realisationEdit', $realisation->id) }}" method="post">
+                @csrf
                 <div class="realisation-edit-element">
                     <label for="">Titre</label>
-                    <input type="text">
+                    <input type="text" value="{{ $realisation->titre }}" name="titre">
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Sous-titre</label>
-                    <input type="text">
+                    <input type="text" value="{{ $realisation->soustitre }}" name="soustitre">
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Uploads</label>
-                    <input type="file">
+                    <input type="file" name="uploads">
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Competence</label>
-                    <select name="" id="competence_select" multiple>
+                    <select name="competences[]" id="competence_select" multiple>
                         @foreach($competences as $competence)
                         <optgroup label="{{ $competence->nom }}">
                             @foreach($competence->souscompetences as $souscompetence)
@@ -37,7 +38,7 @@
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Texte</label>
-                    <div id="editor" style="height: 300px;"></div>
+                    <div id="editor" style="height: 300px;">{!! $realisation->description !!}</div>
                     <input type="hidden" id="quill_html" name="description">
                 </div>
                 <div class="realisation-edit-element-button">
@@ -49,7 +50,7 @@
     </div>
 </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.3.1/css/tom-select.bootstrap5.min.css" integrity="sha512-w7Qns0H5VYP5I+I0F7sZId5lsVxTH217LlLUPujdU+nLMWXtyzsRPOP3RCRWTC8HLi77L4rZpJ4agDW3QnF7cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.3.1/css/tom-select.min.css" integrity="sha512-fnaIKCc5zGOLlOvY3QDkgHHDiDdb4GyMqn99gIRfN6G6NrgPCvZ8tNLMCPYgfHM3i3WeAU6u4Taf8Cuo0Y0IyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.3.1/js/tom-select.complete.js" integrity="sha512-96+GeOCMUo6K6W5zoFwGYN9dfyvJNorkKL4cv+hFVmLYx/JZS5vIxOk77GqiK0qYxnzBB+4LbWRVgu5XcIihAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     new TomSelect('#competence_select', {
@@ -80,5 +81,29 @@
             ]
         }
     });
+
+    quill.getModule('toolbar').addHandler('image', () => {
+        const url = prompt('Insérez l\'URL de l\'image:');
+        if (url) {
+            if (isValidImageUrl(url)) {
+                const range = quill.getSelection();
+                quill.insertEmbed(range.index, 'image', url);
+            } else {
+                alert('L\'URL spécifiée n\'est pas une image valide.');
+            }
+        }
+    });
+
+    function isValidImageUrl(url) {   
+        const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];     
+        const cleanUrl = url.split('?')[0];
+
+        return imageExtensions.some(ext => cleanUrl.toLowerCase().endsWith(ext));
+    }
+
+    // Permet de récupérer le contenu de l'éditeur est "l'injecter" dans un input ce qui va permettre de récupérer le contenu dans notre méthode POST
+    document.querySelector('form').onsubmit = function () {
+        document.getElementById("quill_html").value = quill.root.innerHTML;
+    };
 </script>
 @endsection

@@ -19,7 +19,7 @@ class RealisationFactory extends Factory
         $sousTitre = ucfirst(fake()->word) . ', ' . fake()->word . ', ' . fake()->word;
         return [
             'titre' => fake()->sentence(),
-            'sous-titre' => $sousTitre,
+            'soustitre' => $sousTitre,
             'description' => fake()->paragraph(2, true)
         ];
     }

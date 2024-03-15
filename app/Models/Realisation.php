@@ -9,6 +9,10 @@ class Realisation extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'titre', 'soustitre', 'uploads', 'description'
+    ];
+
     public function recupCompetence()
     {
         return $this->belongsToMany(Competence::class, 'avoirs', 'idRealisation', 'idCompetence')->withPivot('id');
