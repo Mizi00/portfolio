@@ -22,7 +22,7 @@
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Uploads</label>
-                    <input type="file" name="uploads">
+                    <input type="file" name="img">
                 </div>
                 <div class="realisation-edit-element">
                     <label for="">Competence</label>
@@ -30,7 +30,7 @@
                         @foreach($competences as $competence)
                         <optgroup label="{{ $competence->nom }}">
                             @foreach($competence->souscompetences as $souscompetence)
-                            <option value="{{ $souscompetence->id }}">{{ $souscompetence->nom }}</option>
+                            <option value="{{ $souscompetence->id }}" {{ in_array($souscompetence->id, $sousCompetences) ? 'selected' : '' }}>{{ $souscompetence->nom }}</option>
                             @endforeach
                         </optgroup>                       
                         @endforeach

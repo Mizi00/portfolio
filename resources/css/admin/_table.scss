@@ -94,6 +94,15 @@ $hoverTransition : all 0.5s ease-in-out;
         text-align: left;
     }
 
+    .date {
+        font-weight: 700;
+    }
+    .edit-supp {    
+        .edit-a {
+            margin-right: 30px;
+        }
+    }
+
     .table-body {
         a {
             font-weight: 700;

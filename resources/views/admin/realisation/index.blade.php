@@ -13,4 +13,20 @@
     </div>
 </div>
 
+@if(session('success') || session('delete'))
+@section('js')
+<script>
+    butterup.toast({
+        title: ' {{ session('success') ? 'Succès ' : 'Supprimer' }}',
+        message: '{{ session('success') ? session('success') : session('delete') }}',
+        location: 'top-right',
+        icon: false,
+        dismissable: true,
+        type: '{{ session('success') ? 'success' : 'error' }}'
+    });
+</script>
+@endsection
+@endif
+
+
 @endsection
