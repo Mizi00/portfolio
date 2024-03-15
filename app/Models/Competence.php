@@ -9,4 +9,9 @@ class Competence extends Model
 {
     use HasFactory;
     public $timestamps = false;
+
+    public function souscompetences()
+    {
+        return $this->hasMany(SousCompetence::class, 'idCompetence', 'id');
+    }
 }

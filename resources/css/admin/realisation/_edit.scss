@@ -75,5 +75,29 @@
             }
         }
 
+        &-button {
+            margin: 20px 0;
+
+            input {
+                font-size: 16px;
+                border: none;
+                padding: 7px 20px;
+                border-radius: 4px;
+                background-color: #334961;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                    background-color: #44596f;
+                }
+            }
+        }
+
     }
+}
+
+.ts-control {
+    border: 1px solid #dadfe5 !important;
+    border-radius: 4px !important;
 }

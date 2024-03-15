@@ -85,7 +85,7 @@
         </div>
         <div class="form-element">
           <label for="">Mail:</label>
-          <input type="email" class="@error('mail') is-invalid @enderror" name="mail" placeholder="Ex: johndoe@exemple.com">
+          <input type="email" class="@error('mail') is-invalid @enderror"  name="mail" placeholder="Ex: johndoe@exemple.com">
           @error('mail')
           <div class="form-error">{{ $message }}</div>
           @enderror
