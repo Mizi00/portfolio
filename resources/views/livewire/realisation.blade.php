@@ -15,7 +15,7 @@
             <tr>
                 <th>{{ $realisation->id }}</th>
                 <td>{{ $realisation->titre }}</td>
-                <td>{!! $realisation->description !!}</td>
+                <td>{{ Str::limit(strip_tags($realisation->description), 100) }}</td>
                 <td><a href="{{ route('realisationEdit', $realisation->id) }}">Editer</a></td>
             </tr>
             @empty

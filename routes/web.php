@@ -39,5 +39,6 @@ Route::middleware('auth')->prefix('admin')->group(function() {
     Route::post('realisation/edit/{realisation}', [RealisationController::class, 'update']);
 
     Route::get('/realisation/add', [RealisationController::class, 'add'])->name('add');
+    Route::post('/realisation/validateadd', [RealisationController::class, 'validateAdd'])->name('validate');
 });
 

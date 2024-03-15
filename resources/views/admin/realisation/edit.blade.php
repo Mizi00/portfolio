@@ -10,7 +10,7 @@
     <div class="realisation-edit-content">
         <h2>Édition</h2>
         <div class="realisation-edit-form">
-            <form action="{{ route('realisationEdit', $realisation->id) }}" method="post">
+            <form action="{{ route('realisationEdit', $realisation->id) }}" method="post" enctype="multipart/form-data"> <!-- mettre entype="multipart/form-data" pour l'envoie de type file -->
                 @csrf
                 <div class="realisation-edit-element">
                     <label for="">Titre</label>
