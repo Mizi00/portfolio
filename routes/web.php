@@ -21,7 +21,7 @@ Route::controller(HomeController::class)->group(function() {
     Route::get('/', 'index')->name('home');
     Route::post('/', 'getContact');
 });
-Route::get('realisation', [PublicRealisationController::class, 'index'])->name('realisation');
+Route::get('realisations', [PublicRealisationController::class, 'index'])->name('realisation');
 Route::view('veille', 'veille.index')->name('veille');
     
 Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter

@@ -73,13 +73,13 @@ class RealisationController extends Controller
 
             $imagePath = "{$fileName}.webp";
         }
-        $credentials['img'] = $imagePath;
+
 
         Realisation::create([
             'titre' => $credentials['titre'],
             'soustitre' => $credentials['soustitre'],
             'description' => $credentials['description'],
-            'img' => $credentials['img']   
+            'img' => $imagePath  
         ]);
 
         return redirect()->route('realisationAdmin')->with('success', 'Réalisation ajoutée avec succées');

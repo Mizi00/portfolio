@@ -10,7 +10,7 @@ class Realisation extends Model
     use HasFactory;
 
     protected $fillable = [
-        'titre', 'soustitre', 'uploads', 'description'
+        'titre', 'soustitre', 'img', 'description'
     ];
 
     public function recupCompetence()
