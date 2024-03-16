@@ -31,16 +31,20 @@
   flex-direction: column;
   background-color: #fff;
   width: 300px;
+  border-radius: 3px;
 
   &-img {
     flex: none; //annule l'effet flex du parent
     height: 200px;
     overflow: hidden;
+    border-radius: 3px;
 
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px  ;
     }
   }
 
@@ -55,6 +59,16 @@
     line-height: normal;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+
+  &-soustitre {
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: rgba(183, 181, 181, 0.958);  
   }
 
   &-desc {
@@ -70,9 +84,12 @@
       color: #fff;
       padding: 5px 2em;
       background-color: #141414;
+      transition: background-color .3s ease-in-out;
+      border-radius: 3px;
+      
 
       &:hover {
-        background-color: #2c2c2c;
+        background-color: #3f3e3e;
       }
     }
   }
