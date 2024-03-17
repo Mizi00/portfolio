@@ -28,7 +28,7 @@ class RealisationController extends Controller
         $request->validate([
             'titre' => 'required',
             'soustitre' => 'required',
-            'img' => 'image|mimes:jpeg,png,jpg|max:5000',
+            'img' => 'image|mimes:jpeg,png,jpg,webp|max:5000',
             'description' => 'required'
         ]);
 
@@ -62,7 +62,7 @@ class RealisationController extends Controller
             'titre' => 'required',
             'soustitre' => 'required',
             'description' => 'required',
-            'img' => 'required|image|mimes:jpeg,png,jpg|max:5000'
+            'img' => 'required|image|mimes:jpeg,png,jpg,webp|max:5000'
         ]);
 
         if ($request->hasFile('img')) {
@@ -82,7 +82,7 @@ class RealisationController extends Controller
             'img' => $imagePath  
         ]);
 
-        return redirect()->route('realisationAdmin')->with('success', 'Réalisation ajoutée avec succées');
+        return redirect()->route('realisationAdmin')->with('success', 'Réalisation ajoutée avec succées')->withInput();
     }
 
     public function delete(Realisation $realisation)

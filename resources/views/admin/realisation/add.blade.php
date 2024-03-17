@@ -14,11 +14,11 @@
                 @csrf
                 <div class="add-element">
                     <label for="">Titre</label>
-                    <input type="text" name="titre" autocomplete="off">
+                    <input type="text" name="titre" value="{{ old('titre') }}" autocomplete="off">
                 </div>
                 <div class="add-element">
                     <label for="">Sous-titre</label>
-                    <input type="text" name="soustitre" autocomplete="off">
+                    <input type="text" name="soustitre" value="{{ old('soustitre') }}" autocomplete="off">
                 </div>
                 <div class="add-element">
                     <label for="">Uploads</label>
