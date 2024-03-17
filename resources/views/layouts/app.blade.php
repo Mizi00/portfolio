@@ -11,7 +11,7 @@
     @vite(['resources/js/app.js'])
 </head>
 
-<body class="{{ Route::is('homeAdmin') ? 'body-white' : (Route::is('realisationAdmin') || Route::is('realisationEdit') ? 'admin-white' : '') }}">
+<body class="{{ Route::is('homeAdmin') || Route::is('showRealisation') ? 'body-white' : (Route::is('realisationAdmin') || Route::is('realisationEdit') ? 'admin-white' : '') }}">
     @yield('body')
     <script src="{{ asset('asset/butterup.min.js') }}"></script>
     @yield('js')

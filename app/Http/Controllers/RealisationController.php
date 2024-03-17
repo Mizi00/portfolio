@@ -12,4 +12,9 @@ class RealisationController extends Controller
         $realisations = Realisation::latest()->get();
         return view('realisations.index', compact('realisations'));
     }
+
+    public function show(Realisation $realisation)
+    {
+        return view('realisations.realisation', compact('realisation'));
+    }
 }

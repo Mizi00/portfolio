@@ -22,6 +22,7 @@ Route::controller(HomeController::class)->group(function() {
     Route::post('/', 'getContact');
 });
 Route::get('realisations', [PublicRealisationController::class, 'index'])->name('realisation');
+Route::get('realisation/{realisation}', [PublicRealisationController::class, 'show'])->name('showRealisation');
 Route::view('veille', 'veille.index')->name('veille');
     
 Route::middleware('guest')->group(function() {  //guest verifie si le visiteur n'est pas connecter
