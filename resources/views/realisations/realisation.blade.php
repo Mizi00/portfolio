@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('body')
+<x-navbar />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.core.min.css" integrity="sha512-AqSNjpJ7R92d+ANZrrP/hSBerCkDCQE/EILn5MylysaRmbi0Jwi56r39McL3p7LJnO+bjthpFu8GQ2y/d0fECg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -18,4 +19,6 @@
         </div>
     </div>
 </div>
+
+<x-footer border="true" />
 @endsection

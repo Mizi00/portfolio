@@ -88,3 +88,22 @@ footer {
         }
     }
 }
+
+.border {
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+
+    .footer-icon {
+        svg {
+            color: #fff;
+        }
+
+        .tooltip {
+            .tooltiptext {
+                border: 2.5px solid #fff;
+                font-weight: 800;
+            }
+        }
+
+    }
+}
