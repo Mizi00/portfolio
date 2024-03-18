@@ -78,35 +78,35 @@
         @csrf
         <div class="form-element">
           <label for="">Nom:</label>
-          <input type="text" class="@error('nom') is-invalid @enderror" name="nom" placeholder="Ex: Doe">
+          <input type="text" class="@error('nom') is-invalid @enderror" name="nom" autocomplete="off" placeholder="Ex: Doe">
           @error('nom')
           <div class="form-error">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-element">
           <label for="">Mail:</label>
-          <input type="email" class="@error('mail') is-invalid @enderror"  name="mail" placeholder="Ex: johndoe@exemple.com">
+          <input type="email" class="@error('mail') is-invalid @enderror" autocomplete="off" name="mail" placeholder="Ex: johndoe@exemple.com">
           @error('mail')
           <div class="form-error">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-element">
           <label for="">Téléphone:</label>
-          <input type="tel" name="tel" class="@error('tel') is-invalid @enderror" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required placeholder="Ex:0612345678">
+          <input type="tel" name="tel" class="@error('tel') is-invalid @enderror" autocomplete="off" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required placeholder="Ex:0612345678">
           @error('tel')
           <div class="form-error">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-element">
           <label for="">Objet:</label>
-          <input type="text" name="objet" class="@error('objet') is-invalid @enderror" maxlength="70" required placeholder="John Doe exemple">
+          <input type="text" name="objet" class="@error('objet') is-invalid @enderror" autocomplete="off" maxlength="70" required placeholder="John Doe exemple">
           @error('objet')
           <div class="form-error">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-element">
           <label for="">Message:</label>
-          <textarea name="message" id="" cols="50" class="@error('message') is-invalid @enderror" rows="10" placeholder="Votre message ..."></textarea>
+          <textarea name="message" id="" cols="50" class="@error('message') is-invalid @enderror" rows="10" placeholder="Votre message ..." ></textarea>
           @error('message')
           <div class="form-error">{{ $message }}</div>
           @enderror
