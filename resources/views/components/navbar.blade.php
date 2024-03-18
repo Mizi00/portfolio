@@ -1,5 +1,9 @@
 <header class="header">
-    <h1 class="logo"><a href="{{ route('home') }}">Portfolio</a></h1>
+    <div class="logo-content">
+        <a href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" alt="">
+        <h1 class="logo">Portfolio</a></h1>
+    </div>
+    
     <ul class="main-nav">
         @auth
         <li><a href="{{ route('homeAdmin') }}">tableau de bord</a></li>
