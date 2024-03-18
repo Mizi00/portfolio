@@ -27,14 +27,18 @@
     }
 
     &-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 20px 2em;
+        max-width: 600px;
+        margin: 0 auto;
 
-        &-text {
-            margin: 10px 0;
+
+        &-title {
+            h1 {
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+
+        &-text {     
             font-size: 17px;
         }
     }
