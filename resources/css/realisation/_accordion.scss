@@ -1,0 +1,45 @@
+.accordion {
+    &>div~div {
+        border-top: 1px solid rgb(229, 229, 229);
+    }
+
+    &-container {
+        max-width: 1210px;
+        margin: 0 auto;
+        padding: 0 10px;
+        margin-top: 5em;
+    }
+
+    &-item {
+        padding: 1.25rem 0;
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &-content {
+        list-style: disc;
+        color: rgb(82, 82, 82);
+        margin: 0;
+        padding-left: 40px;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.3s ease-out, margin 0.3s ease-out;
+
+        &.active {
+            margin-top: .75rem;
+        }
+    }
+
+    &-toggle {
+        transition: transform 0.3s ease;
+
+        &.rotate {
+            transform: rotate(-180deg);
+        }
+    }
+}
