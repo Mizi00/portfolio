@@ -78,7 +78,7 @@
         @csrf
         <div class="form-element">
           <label for="">Nom:</label>
-          <input type="text" class="@error('nom') is-invalid @enderror" name="nom" autocomplete="off" placeholder="Ex: Doe">
+          <input type="text" class="@error('nom') is-invalid @enderror" name="nom" autocomplete="off" required placeholder="Ex: Doe">
           @error('nom')
           <div class="form-error">{{ $message }}</div>
           @enderror
@@ -106,7 +106,7 @@
         </div>
         <div class="form-element">
           <label for="">Message:</label>
-          <textarea name="message" id="" cols="50" class="@error('message') is-invalid @enderror" rows="10" placeholder="Votre message ..." ></textarea>
+          <textarea name="message" id="" cols="50" class="@error('message') is-invalid @enderror" rows="10" required placeholder="Votre message ..." ></textarea>
           @error('message')
           <div class="form-error">{{ $message }}</div>
           @enderror
