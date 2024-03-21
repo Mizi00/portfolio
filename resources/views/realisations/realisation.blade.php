@@ -32,6 +32,10 @@
                     </div>
                     <ul class="accordion-content">
                         <li>TEST</li>
+                        <li>TEST</li>
+                        <li>TEST</li>
+                        <li>TEST</li>
+                        <li>TEST</li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +71,7 @@
             const arrowIcon = item.querySelector('.accordion-toggle');
             if (content.classList.contains('active')) {
                 content.classList.remove('active');
-                arrowIcon.classList.remove('rotate');   
+                arrowIcon.classList.remove('rotate');
                 content.style.height = '0';
             }
         });
