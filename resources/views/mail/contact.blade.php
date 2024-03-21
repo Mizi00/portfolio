@@ -13,6 +13,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        .content {
+            max-width: 400px;
+            margin: 0 auto
+        }
         .mail {
             display: flex;
             justify-content: center;
@@ -25,9 +29,13 @@
         }
 
         ul {
-            list-style: none;
+            padding-left: 0;
+            list-style-type: none;
             text-align: center;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         ul li {
@@ -35,9 +43,9 @@
         }
 
         .text {
-            margin-top: 50px;
+            margin-top: 10px;
             max-width: 400px;
-        } 
+        }
 
         .text li {
             text-align: left;
@@ -47,18 +55,20 @@
             text-decoration: underline;
         }
     </style>
-    <div class="mail">
-        <h1>Mail de {{ $data['nom'] }}</h1>
-        <ul>
-            <li><b>Ip:</b> {{ Request::ip() }}</li>
-            <li><b>Mail:</b> {{ $data['mail'] }}</li>
-            <li><b>Tél:</b> {{ $data['tel'] }}</li>
-            <li><b>Objet:</b> {{ $data['objet'] }}</li>
-            <div class="text">
-                <li><b>Message:</b> {{ $data['message'] }}</li>
-            </div>
-        </ul>
+    <div class="content">
+        <div class="mail">
+            <h1>Mail de {{ $data['nom'] }}</h1>
+            <ul>
+                <li><b>Ip:</b> {{ Request::ip() }}</li>
+                <li><b>Mail:</b> {{ $data['mail'] }}</li>
+                <li><b>Tél:</b> {{ $data['tel'] }}</li>
+                <li><b>Objet:</b> {{ $data['objet'] }}</li>
+                <li class="text"><b>Message:</b> <span>{{ $data['message'] }}</span></li>
+            </ul>
+        </div>
+
     </div>
+
 
 
 </body>
