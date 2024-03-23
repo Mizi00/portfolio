@@ -16,7 +16,7 @@
     <!--SECTION QUI-SUIS JE-->
     <section class="about-me" id="about-me-id">
         <div class="about-me-img">
-            <img src="{{ asset('img/face.png') }}" alt="">
+            <img src="{{ asset('img/tk788.jpg') }}" alt="">
         </div>
         <div class="about-me-text">
             <h1>Qui suis-je ?</h1>
@@ -127,7 +127,8 @@
                         @enderror
                     </div>
                     <div class="form-element-button">
-                        <input type="submit" value="Envoyer" data-sitekey="{{ config('services.recaptcha_v3.siteKey') }}" data-callback="onSubmit" data-action="submitContact">
+                        <input type="submit" value="Envoyer" data-sitekey="{{ config('services.recaptcha_v3.siteKey') }}"
+                            data-callback="onSubmit" data-action="submitContact">
                     </div>
                     @if (session('success'))
                         <div class="form-success">{!! session('success') !!}</div>

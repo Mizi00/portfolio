@@ -13,7 +13,8 @@
         max-width: 600px;
 
         img {
-            max-width: inherit;
+            max-width: 400px;
+            border-radius: 50%;
         }
 
         @media screen and (max-width: 300px) {
