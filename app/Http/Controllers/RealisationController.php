@@ -15,6 +15,7 @@ class RealisationController extends Controller
 
     public function show(Realisation $realisation)
     {
-        return view('realisations.realisation', compact('realisation'));
+        $competences = $realisation->recupCompetence;
+        return view('realisations.realisation', compact('realisation', 'competences'));
     }
 }

@@ -6,6 +6,7 @@ use App\Models\Competence;
 use App\Models\Realisation;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\SousCompetence;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Laravel\Facades\Image;
 
@@ -31,6 +32,14 @@ class RealisationController extends Controller
             'img' => 'image|mimes:jpeg,png,jpg,webp|max:5000',
             'description' => 'required'
         ]);
+
+        if($request->has('competences')) {
+            $realisation->recupSousCompetence()->detach();
+            $realisation->recupCompetence()->detach();
+            $competences = SousCompetence::whereIn('id', $request->input('competences'))->distinct()->pluck('idCompetence'); //recupere en bdd les competence des souscompetences selection dans le formulaire d'édition
+            $realisation->recupCompetence()->attach($competences);
+            $realisation->recupSousCompetence()->attach($request->input('competences'));
+        }
 
         $realisation->update($request->except('uploads'));
 
@@ -74,6 +83,9 @@ class RealisationController extends Controller
             $imagePath = "{$fileName}.webp";
         }
 
+        if($request->has('competences')) {
+            $realisation->recupSousCompetence()->attach($request->input('competences'));
+        }
 
         Realisation::create([
             'titre' => $credentials['titre'],

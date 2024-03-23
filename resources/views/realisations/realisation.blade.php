@@ -20,26 +20,30 @@
         <div class="show-realisation-content-text ql-editor">
             {!! $realisation->description !!}
         </div>
+        @if($realisation->recupCompetence->isNotEmpty())
         <div class="accordion-container">
             <h2>Compétences</h2>
             <div class="accordion">
+                @foreach($competences as $competence)
                 <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>TEST</span>
+                    <div class="accordion-header">      
+                        <span>{{ $competence->nom }}</span>
                         <span class="accordion-toggle"><svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
                                 <path d="M6 9l6 6 6-6"></path>
                             </svg></span>
                     </div>
                     <ul class="accordion-content">
-                        <li>TEST</li>
-                        <li>TEST</li>
-                        <li>TEST</li>
-                        <li>TEST</li>
-                        <li>TEST</li>
+                        @foreach($competence->souscompetences as $souscompetence)
+                        @if($realisation->recupSousCompetence->contains($souscompetence))
+                            <li>{{ $souscompetence->nom }}</li>
+                        @endif
+                        @endforeach
                     </ul>
                 </div>
+                @endforeach
             </div>
         </div>
+        @endif
     </div>
 </div>
 

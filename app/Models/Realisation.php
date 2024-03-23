@@ -15,7 +15,7 @@ class Realisation extends Model
 
     public function recupCompetence()
     {
-        return $this->belongsToMany(Competence::class, 'avoirs', 'idRealisation', 'idCompetence')->withPivot('id');
+        return $this->belongsToMany(Competence::class, 'avoirs', 'idRealisation', 'idCompetence');
     }
 
     public function recupSousCompetence()
