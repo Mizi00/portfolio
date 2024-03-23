@@ -6,7 +6,7 @@
         @endauth
         <li><a href="{{ route('home') }}#about-me-id">Qui suis-je ?</a></li>
         <li><a href="{{ route('realisation') }}">Réalisations</a></li>
-        <!--<li><a href="#">Compétences</a></li>-->
+        <li><a href="{{ route('competence') }}">Compétences</a></li>
         <li><a href="{{ route('veille') }}">Veille</a></li>
         <li><a href="{{ route('home') }}#contact">Contact</a></li>
     </ul>

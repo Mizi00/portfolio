@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\RealisationController;
+use App\Http\Controllers\CompetenceController;
 use App\Http\Controllers\RealisationController as PublicRealisationController;
 
 /*
@@ -25,6 +26,7 @@ Route::controller(HomeController::class)->group(function () {
 Route::get('realisations', [PublicRealisationController::class, 'index'])->name('realisation');
 Route::get('realisation/{realisation}', [PublicRealisationController::class, 'show'])->name('showRealisation');
 Route::view('veille', 'veille.index')->name('veille');
+Route::get('competence', [CompetenceController::class, 'index'])->name('competence');
 
 Route::middleware('guest')->group(function () {  //guest verifie si le visiteur n'est pas connecter
     //premier paramètre => URL | deuxième => chemin vers la vue

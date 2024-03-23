@@ -1,0 +1,24 @@
+.menu-competence {
+    &-contain {
+        max-width: 750px;
+        margin: 4em auto;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            font-size: 18px;
+            background-color: #fff;
+            padding: 10px 10px;
+            border-radius: 5px;
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }   
+}
