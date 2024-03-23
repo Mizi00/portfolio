@@ -1,4 +1,14 @@
 .menu-competence {
+    &-title {
+        text-align: center;
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 30px;
+        }
+    }
+
     &-contain {
         max-width: 750px;
         margin: 4em auto;
@@ -20,5 +30,20 @@
                 text-decoration: underline;
             }
         }
-    }   
+    }
+
+    @media screen and (max-width: 250px) and (max-width: 400px) {
+        &-title {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        &-content {
+            margin: 0 10px;
+        }
+    }
+
 }

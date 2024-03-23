@@ -11,4 +11,9 @@ class CompetenceController extends Controller
         $competences = Competence::all();
         return view('competences.index', compact('competences'));
     }
+
+    public function show(Competence $competence) {
+        $souscompetences = $competence->souscompetences()->get();
+        return view('competences.souscompetence', compact('souscompetences', 'competence'));
+    }
 }

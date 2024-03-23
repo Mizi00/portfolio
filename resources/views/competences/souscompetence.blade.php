@@ -4,15 +4,14 @@
 <x-navbar />
 <x-sidebar />
 <div class="menu-competence-title">
-    <h1>Menu des compétences</h1>
+    <h1>{{ $competence->nom }}</h1>
 </div>
 <div class="menu-competence-contain">
     <ul class="menu-competence-content">
-        @foreach ($competences as $competence)
-            <a href="{{ route('competence', $competence->id) }}"><li>{{ $competence->nom }}</li></a>
+        @foreach($souscompetences as $souscompetence)
+        <a href=""><li>{{ $souscompetence->nom }}</li></a>
         @endforeach
     </ul>
 </div>
-
-<x-footer />   
+<x-footer />
 @endsection
