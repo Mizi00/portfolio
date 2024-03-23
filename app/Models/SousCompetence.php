@@ -9,4 +9,9 @@ class SousCompetence extends Model
 {
     use HasFactory;
     public $timestamps = false;
+
+    public function recupRealisation()
+    {
+        return $this->belongsToMany(Realisation::class, 'detenirs', 'idSousCompetence', 'idRealisation');
+    }
 }
