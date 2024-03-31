@@ -3,6 +3,5 @@ install:
 	npm i
 	copy .env.example .env
 	php artisan key:generate
-	mkdir -p storage/app/public/uploads
-	mkdir -p storage/app/public/cv
+	mkdir storage\app\public\uploads
 	php artisan storage:link
