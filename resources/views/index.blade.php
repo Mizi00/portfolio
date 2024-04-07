@@ -16,7 +16,7 @@
     <!--SECTION QUI-SUIS JE-->
     <section class="about-me" id="about-me-id">
         <div class="about-me-img">
-            <img src="{{ asset('img/tk788.jpg') }}" alt="">
+            <img src="{{ asset('img/face.png') }}" alt="">
         </div>
         <div class="about-me-text">
             <h1>Qui suis-je ?</h1>

@@ -2,6 +2,37 @@
     display: flex;
     flex-direction: column;
 
+    &-img {
+        width: 100%;
+        height: 60vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(22, 22, 22, 0.699)),url('https://www.forbes.fr/wp-content/uploads/2022/12/gettyimages-1358149692.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 50px;
+            color: #dadada;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+
+    &-text {
+        width: 800px;
+        margin: 5em auto;
+        h4 {
+            font-size: 21px;
+        }
+        p, ul {
+            font-size: 17px;
+        }
+    }
+
     &-title {
         display: flex;
         flex-direction: column;
@@ -35,23 +66,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 25px;
         margin: 10px 0;
 
         border-radius: 16px;
-        background-color: #fff;
 
         &-img {
 
-            height: 200px;
+            height: 160px;
 
             img {
                 height: 100%;
                 width: 260px;
                 object-fit: cover;
                 border-radius: 12px;
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
                 transition: filter .15s ease-in-out;
 
                 &:hover {
@@ -147,4 +175,9 @@
             }
         }
     }
+}
+
+.title-article {
+    text-align: center;
+    font-size: 45px;
 }
