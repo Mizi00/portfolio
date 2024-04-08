@@ -111,7 +111,7 @@
 
             h2 {
                 margin: 0;
-                font-size: 25px;
+                font-size: 20px;
 
                 a {
                     transition: color .3s ease-in-out;
@@ -177,7 +177,11 @@
     }
 }
 
-.title-article {
-    text-align: center;
-    font-size: 45px;
+.container-veille {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .title-article {
+        font-size: 33px;
+    }
 }
