@@ -185,3 +185,24 @@
         font-size: 33px;
     }
 }
+
+.slide-outils {
+    max-width: 1000px;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+        margin: 1em 0;
+        font-size: 35px;
+        text-decoration: underline;
+    }
+}
+
+.splide {
+    width: 1000px;
+    height: 500px;
+    margin: 2em auto;
+
+    img {
+        width: 700px;
+    }
+}
