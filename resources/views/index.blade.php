@@ -28,7 +28,7 @@
                 création de solutions novatrices a été le moteur de mon engagement dans ce domaine en constante évolution.
             </p>
             <div class="about-me-text-button">
-                <a href="">Mon CV</a>
+                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/6617c2d33acea.pdf" target="_blank">Mon CV</a>
             </div>
 
         </div>
