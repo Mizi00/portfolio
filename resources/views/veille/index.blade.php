@@ -167,7 +167,7 @@
                                 target="_blank">Données personnelles et IA : l’apport des normes ISO/IEC 27701 et 42001</a>
                         </h2>
                         <p>La norme internationale ISO/IEC 27701 décrit la gouvernance et les mesures de sécurité à mettre
-                            en place pour les traitements de données...²²</p>
+                            en place pour les traitements de données...</p>
                         <div class="veille-content-element-button">
                             <a href="https://www.cnil.fr/fr/liso-27701-une-norme-internationale-pour-la-protection-des-donnees-personnelles"
                                 target="_blank">Voir plus</a>
