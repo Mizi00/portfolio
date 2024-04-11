@@ -48,7 +48,7 @@
 
             .content {
                 padding: 20px 30px;
-                background-color: $graydefault;
+                //background-color: $graydefault;
                 position: relative;
                 border-radius: 6px;
             }
@@ -56,36 +56,37 @@
 
         .left {
             left: 0;
+            text-align: end;
 
-            &::before {
-                content: " ";
-                height: 0;
-                position: absolute;
-                top: 22px;
-                width: 0;
-                z-index: 1;
-                right: 30.5px;
-                border: medium solid $graydefault;
-                border-width: 10px 0 10px 10px;
-                border-color: transparent transparent transparent $graydefault;
-            }
+            // &::before {
+            //     content: " ";
+            //     height: 0;
+            //     position: absolute;
+            //     top: 22px;
+            //     width: 0;
+            //     z-index: 1;
+            //     right: 30.5px;
+            //     border: medium solid $graydefault;
+            //     border-width: 10px 0 10px 10px;
+            //     border-color: transparent transparent transparent $graydefault;
+            // }
         }
 
         .right {
             left: 50%;
 
-            &::before {
-                content: " ";
-                height: 0;
-                position: absolute;
-                top: 22px;
-                width: 0;
-                z-index: 1;
-                left: 30.5px;
-                border: medium solid $graydefault;
-                border-width: 10px 10px 10px 0;
-                border-color: transparent $graydefault transparent transparent;
-            }
+            // &::before {
+            //     content: " ";
+            //     height: 0;
+            //     position: absolute;
+            //     top: 22px;
+            //     width: 0;
+            //     z-index: 1;
+            //     left: 30.5px;
+            //     border: medium solid $graydefault;
+            //     border-width: 10px 10px 10px 0;
+            //     border-color: transparent $graydefault transparent transparent;
+            // }
 
             &::after {
                 left: -16px;

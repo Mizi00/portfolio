@@ -63,6 +63,7 @@
                     <ul class="splide__list">
                         <li class="splide__slide"><img src="https://www.tactee.fr/wp-content/uploads/2014/08/logo-google-alerts.png" alt=""></li>
                         <li class="splide__slide"><img src="{{ asset('img/googlealert.png') }}" alt=""></li>
+                        <li class="splide__slide"><img src="{{ asset('img/capture.png') }}" alt=""></li>
                         <li class="splide__slide"><img src="https://www.egatereferencement.com/wp-content/uploads/2017/04/google-actualites.png" alt=""></li>
                     </ul>
                 </div>

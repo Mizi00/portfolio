@@ -49,6 +49,20 @@
             </div>
             <div class="parcours-timeline-contain right">
                 <div class="content">
+                    <span>2023 - 2024</span>
+                    <h2>Stage chez Val Hainaut Auto</h2>
+                    <span>Durée de 1 mois date de début: 15 janvier au 23 février</span>
+                </div>
+            </div>
+            <div class="parcours-timeline-contain left">
+                <div class="content">
+                    <span>2022 - 2023</span>
+                    <h2>Stage chez Val Hainaut Auto</h2>
+                    <span>Durée de 1 mois date de début: 15 mai au 23 juin</span>
+                </div>
+            </div>
+            <div class="parcours-timeline-contain right">
+                <div class="content">
                     <span>2021 - 2022</span>
                     <h2>1er Année BUT Informatique</h2>
                     <span>IUT Villeneuve d'Ascq</span>
