@@ -42,26 +42,23 @@
         <div class="parcours-timeline">
             <div class="parcours-timeline-contain left">
                 <div class="content">
-                    <h2>Bac STMG</h2>
-                    <p>Lycée Wallon, obtenu en 2020</p>
+                    <span>2022 - 2024</span>
+                    <h2>Brevet de Technicien Supérieur (BTS) SIO</h2>
+                    <span>Formation au BTS SIO au Lycée Gaston Berger à Lille, option SLAM.</span>
                 </div>
             </div>
             <div class="parcours-timeline-contain right">
                 <div class="content">
-                    <h2>1er année BUT</h2>
-                    <p>IUT Villeneuve d'Ascq, 2021</p>
+                    <span>2021 - 2022</span>
+                    <h2>1er Année BUT Informatique</h2>
+                    <span>IUT Villeneuve d'Ascq</span>
                 </div>
             </div>
             <div class="parcours-timeline-contain left">
                 <div class="content">
-                    <h2>BTS SIO</h2>
-                    <p>Lycée Gaston Berger, obtenu en 2024</p>
-                </div>
-            </div>
-            <div class="parcours-timeline-contain right">
-                <div class="content">
-                    <h2>Stage Informatique 2eme année</h2>
-                    <p>Réaliser chez ValHainaut Auto</p>
+                    <span>2020 - 2021</span>
+                    <h2>Baccalauréat STMG (Sciences et Technologies du Management et de la Gestion)</h2>
+                    <p>Lycée Henri Wallon, Valenciennes</p>
                 </div>
             </div>
         </div>
