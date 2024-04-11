@@ -39,19 +39,16 @@
         max-width: 800px;
         margin: 0 auto;
 
-
-        &-title {
-            h1 {
-                text-transform: uppercase;
-                text-decoration: underline;
-            }
-        }
-
         &-text {     
             font-size: 17px;
 
             img {
                 width: 100%;
+            }
+            
+            a {
+                color: rgb(92, 92, 253);
+                text-decoration: underline;
             }
         }
 

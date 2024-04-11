@@ -14,9 +14,6 @@
         </div>
     </div>
     <div class="show-realisation-content">
-        <div class="show-realisation-content-title">
-            <h1>Contenu de la realisation</h1>
-        </div>
         <div class="show-realisation-content-text ql-editor">
             {!! $realisation->description !!}
         </div>
