@@ -81,18 +81,22 @@ class RealisationController extends Controller
             Image::read($originalImage)->toWebP(85)->save("storage/uploads/{$fileName}.webp");
 
             $imagePath = "{$fileName}.webp";
-        }
+        }        
 
-        if($request->has('competences')) {
-            $realisation->recupSousCompetence()->attach($request->input('competences'));
-        }
-
-        Realisation::create([
+        $realisation = Realisation::create([
             'titre' => $credentials['titre'],
             'soustitre' => $credentials['soustitre'],
             'description' => $credentials['description'],
             'img' => $imagePath  
         ]);
+
+        if($request->has('competences')) {
+            $sousCompetences = $request->input('competences');
+
+            $competencesIds = SousCompetence::whereIn('id', $sousCompetences)->distinct()->pluck('idCompetence');
+            $realisation->recupCompetence()->attach($competencesIds);
+            $realisation->recupSousCompetence()->attach($sousCompetences);
+        }
 
         return redirect()->route('realisationAdmin')->with('success', 'Réalisation ajoutée avec succées')->withInput();
     }
