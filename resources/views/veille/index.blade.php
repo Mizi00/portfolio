@@ -75,7 +75,7 @@
             <div class="veille-container">
                 <div class="veille-content">
                     <div class="veille-content-img">
-                        <a href="" target="_blank"><img
+                        <a href="https://www.clubic.com/chatgpt/actualite-472665-on-a-demande-a-chatgpt-de-faire-une-application-mobile.html" target="_blank"><img
                                 src="https://pic.clubic.com/v1/images/2116332/raw.webp?fit=max&width=1200&hash=e78873a2aba147eff5c887130b3c9ac1c71e3029"
                                 alt=""></a>
                     </div>
@@ -86,7 +86,7 @@
                         <p>Est-ce que vous savez coder ? Que la réponse soit oui ou non, impossible de passer à côté de
                             ChatGPT dans le domaine du développement informatique. Si vous n'êtes...</p>
                         <div class="veille-content-element-button">
-                            <a href="" target="_blank">Voir plus</a>
+                            <a href="https://www.clubic.com/chatgpt/actualite-472665-on-a-demande-a-chatgpt-de-faire-une-application-mobile.html" target="_blank">Voir plus</a>
                         </div>
                     </div>
                 </div>
