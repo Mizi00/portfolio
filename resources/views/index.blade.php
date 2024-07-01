@@ -20,15 +20,17 @@
         </div>
         <div class="about-me-text">
             <h1>Qui suis-je ?</h1>
-            <p>Je m'appelle Toufik Boukichou, j'ai 20 ans, <strong>étudiant</strong> en <strong>BTS Services Informatiques
-                    aux Organisations (SIO)</strong> résidant à <strong>Valenciennes</strong>. Mon parcours académique m'a
-                ouvert les portes d'un univers qui me passionne profondément : l'informatique.
-                Au fil de mon cursus, j'ai développé des compétences solides en développement, gestion de projets et
-                maintenance des systèmes d'information. Mon intérêt pour la résolution de problèmes informatiques et la
-                création de solutions novatrices a été le moteur de mon engagement dans ce domaine en constante évolution.
+            <p> Bonjour, je m'appelle Toufik Boukichou. J'ai 20 ans et je réside à Valenciennes. Actuellement, je suis
+                inscrit en <b>Bachelor Développement Web à MyDigitalSchool à Lille pour la rentrée 2024</b>. Je suis à la recherche
+                d'un <b>stage de 12 mois</b> ou d'une alternance sur le Valenciennois et la région Lilloise afin de mettre en
+                pratique mes compétences et d'acquérir une expérience professionnelle enrichissante.</p>
+
+            <p>Je suis une personne motivée et réceptive, toujours prête à apprendre et à relever de nouveaux défis. Mes
+                compétences en développement web incluent la maîtrise de <b>HTML/CSS, JavaScript, PHP, SQL, Java, et C</b>. J'ai
+                également de l'expérience avec des frameworks tels que <b>React, Node.js, et Laravel</b>.
             </p>
             <div class="about-me-text-button">
-                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/6617c2d33acea.pdf" target="_blank">Mon CV</a>
+                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/668285afe821f.pdf" target="_blank">Mon CV</a>
             </div>
 
         </div>
@@ -82,7 +84,7 @@
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-about-me">
-                <h1>Me Contactez</h1>
+                <h1>Me Contacter</h1>
                 <ul>
                     <li><b>Tel:</b> <a href="">06.10.40.49.23</a></li>
                     <li><b>Mail:</b> <a href="">toufikboukichou2@gmail.com</a></li>
