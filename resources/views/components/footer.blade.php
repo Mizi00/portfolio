@@ -34,7 +34,7 @@
             </div>
 
             <div class="tooltip">
-                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/668285afe821f.pdf" target="_blank">
+                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/668bdb1e70004.pdf" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file" width="24"
                         height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">

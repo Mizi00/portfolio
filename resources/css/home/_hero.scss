@@ -74,3 +74,16 @@
     }
 
 }
+
+.button-pop {
+    background-color: #2f404f;
+    //box-shadow: none;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.swal2-html-container {
+    line-height: 27px !important;
+}

@@ -1,5 +1,28 @@
 @extends('layouts.app')
 
+@section('js')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                    title: 'À la recherche d\'une alternance pour la rentrée 2024',
+                    text: 'Suite à mon admission à l\'école MyDigitalSchool à Lille pour un Bachelor en Développement Web, je suis à la recherche d\'une alternance d\'un an avec un rythme de 2 semaines en entreprise et 1 semaine en cours. Passionné par le digital et déterminé à mettre en pratique mes compétences,je suis prêt à m\'investir pleinement dans de nouveaux défis. Si vous êtes intéressé par mon profil, n\'hésitez pas à me contacter !',
+                    confirmButtonText: 'Mon CV',
+                    showCloseButton: true,
+                    customClass: {
+                        confirmButton: "button-pop"
+                    }
+
+                })
+                .then((result) => {
+                    if (result.isConfirmed) {
+                        window.open('https://uploads.portfolio.tboukichou.fr/pdfs/668bdb1e70004.pdf', '_blank')
+                    }
+                });
+        });
+    </script>
+@endsection
 @section('body')
     <x-navbar />
     <x-sidebar />
@@ -8,7 +31,7 @@
     <section class="hero">
         <div class="hero-inner">
             <h1>Portfolio</h1>
-            <p>Toufik BOUKICHOU en BTS SIO</p>
+            <p>Toufik BOUKICHOU</p>
         </div>
         <a href="#about-me-id">Voir plus</a>
     </section>
@@ -21,16 +44,19 @@
         <div class="about-me-text">
             <h1>Qui suis-je ?</h1>
             <p> Bonjour, je m'appelle Toufik Boukichou. J'ai 20 ans et je réside à Valenciennes. Actuellement, je suis
-                inscrit en <b>Bachelor Développement Web à MyDigitalSchool à Lille pour la rentrée 2024</b>. Je suis à la recherche
-                d'un <b>stage de 12 mois</b> ou d'une alternance sur le Valenciennois et la région Lilloise afin de mettre en
+                inscrit en <b>Bachelor Développement Web à MyDigitalSchool à Lille pour la rentrée 2024</b>. Je suis à la
+                recherche
+                d'un <b>stage de 12 mois</b> ou d'une alternance sur le Valenciennois et la région Lilloise afin de mettre
+                en
                 pratique mes compétences et d'acquérir une expérience professionnelle enrichissante.</p>
 
             <p>Je suis une personne motivée et réceptive, toujours prête à apprendre et à relever de nouveaux défis. Mes
-                compétences en développement web incluent la maîtrise de <b>HTML/CSS, JavaScript, PHP, SQL, Java, et C</b>. J'ai
+                compétences en développement web incluent la maîtrise de <b>HTML/CSS, JavaScript, PHP, SQL, Java, et C</b>.
+                J'ai
                 également de l'expérience avec des frameworks tels que <b>React, Node.js, et Laravel</b>.
             </p>
             <div class="about-me-text-button">
-                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/668285afe821f.pdf" target="_blank">Mon CV</a>
+                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/668bdb1e70004.pdf" target="_blank">Mon CV</a>
             </div>
 
         </div>
