@@ -7,7 +7,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             Swal.fire({
                     title: 'À la recherche d\'une alternance pour la rentrée 2024',
-                    text: 'Suite à mon admission à l\'école MyDigitalSchool à Lille pour un Bachelor en Développement Web, je suis à la recherche d\'une alternance d\'un an avec un rythme de 2 semaines en entreprise et 1 semaine en cours. Passionné par le digital et déterminé à mettre en pratique mes compétences,je suis prêt à m\'investir pleinement dans de nouveaux défis. Si vous êtes intéressé par mon profil, n\'hésitez pas à me contacter !',
+                    text: 'Suite à mon admission à l\'école MyDigitalSchool à Lille pour un Bachelor en Développement Web, je suis à la recherche d\'une alternance d\'un an avec un rythme de 2 semaines en entreprise et 1 semaine en cours. Passionné par le digital et déterminé à mettre en pratique mes compétences, je suis prêt à m\'investir pleinement dans de nouveaux défis. Si vous êtes intéressé par mon profil, n\'hésitez pas à me contacter !',
                     confirmButtonText: 'Mon CV',
                     showCloseButton: true,
                     customClass: {
@@ -46,7 +46,7 @@
             <p> Bonjour, je m'appelle Toufik Boukichou. J'ai 20 ans et je réside à Valenciennes. Actuellement, je suis
                 inscrit en <b>Bachelor Développement Web à MyDigitalSchool à Lille pour la rentrée 2024</b>. Je suis à la
                 recherche
-                d'un <b>stage de 12 mois</b> ou d'une alternance sur le Valenciennois et la région Lilloise afin de mettre
+                d'une <b>alternance de 12 mois</b> sur le Valenciennois et la région Lilloise afin de mettre
                 en
                 pratique mes compétences et d'acquérir une expérience professionnelle enrichissante.</p>
 
