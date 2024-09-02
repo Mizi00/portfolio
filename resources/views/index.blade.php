@@ -17,7 +17,7 @@
                 })
                 .then((result) => {
                     if (result.isConfirmed) {
-                        window.open('https://uploads.portfolio.tboukichou.fr/pdfs/668bdb1e70004.pdf', '_blank')
+                        window.open('https://uploads.portfolio.tboukichou.fr/pdfs/66d5f1ad60cab.pdf', '_blank')
                     }
                 });
         });
@@ -51,12 +51,12 @@
                 pratique mes compétences et d'acquérir une expérience professionnelle enrichissante.</p>
 
             <p>Je suis une personne motivée et réceptive, toujours prête à apprendre et à relever de nouveaux défis. Mes
-                compétences en développement web incluent la maîtrise de <b>HTML/CSS, JavaScript, PHP, SQL, Java, et C</b>.
+                compétences en développement web incluent la maîtrise de <b>HTML/CSS, JavaScript, PHP, SQL et Java</b>.
                 J'ai
-                également de l'expérience avec des frameworks tels que <b>React, Node.js, et Laravel</b>.
+                également de l'expérience avec des frameworks tels que <b>Laravel</b>.
             </p>
             <div class="about-me-text-button">
-                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/668bdb1e70004.pdf" target="_blank">Mon CV</a>
+                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/66d5f1ad60cab.pdf" target="_blank">Mon CV</a>
             </div>
 
         </div>
