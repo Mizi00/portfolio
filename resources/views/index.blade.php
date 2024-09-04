@@ -17,7 +17,7 @@
                 })
                 .then((result) => {
                     if (result.isConfirmed) {
-                        window.open('https://uploads.portfolio.tboukichou.fr/pdfs/66d5f1ad60cab.pdf', '_blank')
+                        window.open('https://uploads.portfolio.tboukichou.fr/pdfs/66d892a15d068.pdf', '_blank')
                     }
                 });
         });
@@ -56,7 +56,7 @@
                 également de l'expérience avec des frameworks tels que <b>Laravel</b>.
             </p>
             <div class="about-me-text-button">
-                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/66d5f1ad60cab.pdf" target="_blank">Mon CV</a>
+                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/66d892a15d068.pdf" target="_blank">Mon CV</a>
             </div>
 
         </div>
