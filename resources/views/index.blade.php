@@ -20,13 +20,7 @@
         </div>
         <div class="about-me-text">
             <h1>Qui suis-je ?</h1>
-            <p> Bonjour, je m'appelle Toufik Boukichou. J'ai 20 ans et je réside à Valenciennes. Actuellement, je suis
-                inscrit en <b>Bachelor Développement Web à MyDigitalSchool à Lille pour la rentrée 2024</b>. Je suis à la
-                recherche
-                d'une <b>alternance de 12 mois</b> sur le Valenciennois et la région Lilloise afin de mettre
-                en
-                pratique mes compétences et d'acquérir une expérience professionnelle enrichissante.</p>
-
+            <p> Bonjour, je m'appelle Toufik Boukichou. J'ai 21 ans et je réside à Valenciennes. Actuellement, en BUT 3 Informatique à l'IUT de Villeneuve d'Ascq.</p>
             <p>Je suis une personne motivée et réceptive, toujours prête à apprendre et à relever de nouveaux défis. Mes
                 compétences en développement web incluent la maîtrise de <b>HTML/CSS, JavaScript, PHP, SQL et Java</b>.
                 J'ai
