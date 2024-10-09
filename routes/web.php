@@ -26,7 +26,6 @@ Route::controller(HomeController::class)->group(function () {
 });
 Route::get('realisations', [PublicRealisationController::class, 'index'])->name('realisation');
 Route::get('realisation/{realisation}', [PublicRealisationController::class, 'show'])->name('showRealisation');
-Route::view('veille', 'veille.index')->name('veille');
 Route::get('competences', [CompetenceController::class, 'index'])->name('competences');
 Route::get('competences/{competence}', [CompetenceController::class, 'show'])->name('competence');
 Route::get('competences/realisation/{souscompetence}', [SousCompetenceController::class, 'show'])->name('realisationWithSouscompetence');
