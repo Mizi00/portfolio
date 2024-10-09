@@ -1,28 +1,5 @@
 @extends('layouts.app')
 
-@section('js')
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            Swal.fire({
-                    title: 'À la recherche d\'une alternance pour la rentrée 2024',
-                    text: 'Suite à mon admission à l\'école MyDigitalSchool à Lille pour un Bachelor en Développement Web, je suis à la recherche d\'une alternance d\'un an avec un rythme de 2 semaines en entreprise et 1 semaine en cours. Passionné par le digital et déterminé à mettre en pratique mes compétences, je suis prêt à m\'investir pleinement dans de nouveaux défis. Si vous êtes intéressé par mon profil, n\'hésitez pas à me contacter !',
-                    confirmButtonText: 'Mon CV',
-                    showCloseButton: true,
-                    customClass: {
-                        confirmButton: "button-pop"
-                    }
-
-                })
-                .then((result) => {
-                    if (result.isConfirmed) {
-                        window.open('https://uploads.portfolio.tboukichou.fr/pdfs/66d892a15d068.pdf', '_blank')
-                    }
-                });
-        });
-    </script>
-@endsection
 @section('body')
     <x-navbar />
     <x-sidebar />
@@ -56,7 +33,7 @@
                 également de l'expérience avec des frameworks tels que <b>Laravel</b>.
             </p>
             <div class="about-me-text-button">
-                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/66d892a15d068.pdf" target="_blank">Mon CV</a>
+                <a href="https://uploads.portfolio.tboukichou.fr/pdfs/6706dc74e93e8.pdf" target="_blank">Mon CV</a>
             </div>
 
         </div>
